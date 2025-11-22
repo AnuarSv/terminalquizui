@@ -1,0 +1,667 @@
+{
+    "title": "AWS Academy Cloud Foundations Quiz",
+    "questions": [
+      {
+        "id": 1,
+        "question": "The systems development lifecycle (SDLC) has six phases. The first three phases are plan, define, and design. What are the last three phases of the SDLC?",
+        "options": [
+          "Develop, deploy, and maintain",
+          "Code, build, and maintain",
+          "Code, build, and test",
+          "Test, deploy, and maintain"
+        ],
+        "answer": [
+          "Test, deploy, and maintain"
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Which task is performed during the develop stage of the systems development lifecycle (SDLC)?",
+        "options": [
+          "The system is put into use.",
+          "New components are obtained and installed.",
+          "Deficiencies are identified.",
+          "New system requirements are defined."
+        ],
+        "answer": [
+          "New components are obtained and installed."
+        ]
+      },
+      {
+        "id": 3,
+        "question": "A systems administrator must grant a new developer permissions that are associated with the developer role. This role is associated with the developer group. Which AWS service should the administrator use to assign the new developer to the developer group?",
+        "options": [
+          "AWS Resource Access Manager (AWS RAM)",
+          "Amazon Simple Storage Service (Amazon S3)",
+          "Amazon Elastic Compute Cloud (Amazon EC2)",
+          "AWS Identity and Access Management (IAM)"
+        ],
+        "answer": [
+          "AWS Identity and Access Management (IAM)"
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Which of the following is an important benefit of AWS CloudShell?",
+        "options": [
+          "It inherits your credentials from the AWS Management Console.",
+          "You manually patch and update the environment.",
+          "Users get 500 MB of storage per region.",
+          "You pay up front for reserved blocks of time and capacity."
+        ],
+        "answer": [
+          "It inherits your credentials from the AWS Management Console."
+        ]
+      },
+      {
+        "id": 5,
+        "question": "What are three ways to interact with AWS service application programming interfaces (APIs)? (Select the THREE best options.)",
+        "options": [
+          "AWS X-Ray",
+          "AWS software development kits (SDKs)",
+          "AWS Identity and Access Management (IAM)",
+          "AWS Management Console",
+          "AWS Command Line Interface (AWS CLI)",
+          "AWS CloudTrail"
+        ],
+        "answer": [
+          "AWS software development kits (SDKs)",
+          "AWS Management Console",
+          "AWS Command Line Interface (AWS CLI)"
+        ]
+      },
+      {
+        "id": 6,
+        "question": "Which tool enables users to control their AWS services from the command line and automate service management with scripts?",
+        "options": [
+          "AWS Tools for PowerShell",
+          "AWS Identity and Access Management (IAM)",
+          "AWS X-Ray",
+          "Amazon Q Developer"
+        ],
+        "answer": [
+          "AWS Tools for PowerShell"
+        ]
+      },
+      {
+        "id": 7,
+        "question": "What is Amazon Q Developer?",
+        "options": [
+          "A generative AI-powered coding assistant",
+          "A cloud-based integrated development environment (IDE)",
+          "A browser-based CLI",
+          "A wizard that leads you through the steps to configure your integrated development environment (IDE)"
+        ],
+        "answer": [
+          "A generative AI-powered coding assistant"
+        ]
+      },
+      {
+        "id": 8,
+        "question": "Which statements describe AWS resource application programming interfaces (APIs)? (Select TWO.)",
+        "options": [
+          "They have at least one class per conceptual resource.",
+          "They provide a higher-level abstraction than the low-level calls made by service client APIs.",
+          "They provide a lower-level abstraction than the higher-level calls made by service client APIs.",
+          "They have objects for request and result data.",
+          "They provide access to resources through objects and collections."
+        ],
+        "answer": [
+          "They have at least one class per conceptual resource.",
+          "They provide a higher-level abstraction than the low-level calls made by service client APIs."
+        ]
+      },
+      {
+        "id": 9,
+        "question": "A developer is using the AWS software development kit (SDK) for Python (Boto3) and must specify the Region. Which method enables the developer specify the Region?",
+        "options": [
+          "Users cannot specify the AWS Region in the service client",
+          "By associating a default Region with their profile in the credentials file in the .aws folder within their \"home\" folder",
+          "By setting the AWS_PROFILE environment variable",
+          "By setting the Region when they instantiate the service client"
+        ],
+        "answer": [
+          "By setting the Region when they instantiate the service client"
+        ]
+      },
+      {
+        "id": 10,
+        "question": "A developer makes an application programming interface (API) call to access an Amazon Simple Storage Service (Amazon S3) bucket that doesn't exist. Which HTTP response code does the developer receive from the AWS service?",
+        "options": [
+          "400 series",
+          "200 series",
+          "300 series",
+          "500 series"
+        ],
+        "answer": [
+          "400 series"
+        ]
+      },
+      {
+        "id": 11,
+        "question": "A student is learning about Amazon Simple Storage Service (Amazon S3). During an interview, a potential employer asks the student to explain how Amazon S3 can be used as a storage solution. Which option is a use case for Amazon S3?",
+        "options": [
+          "Hosting active databases",
+          "Block-level storage",
+          "Shared file systems",
+          "Data lake"
+        ],
+        "answer": [
+          "Data lake"
+        ]
+      },
+      {
+        "id": 12,
+        "question": "A ___ organizes the Amazon Simple Storage Service (Amazon S3) namespace at the highest level.",
+        "options": [
+          "Bucket",
+          "Region",
+          "Container",
+          "Group"
+        ],
+        "answer": [
+          "Bucket"
+        ]
+      },
+      {
+        "id": 13,
+        "question": "A developer wants to store image files in a bucket that is called images-bucket, but receives the error BucketAlreadyExists. Which action must the developer take to resolve this error?",
+        "options": [
+          "Bucket names are globally unique. If the requested bucket name is not available, the developer must rename the bucket.",
+          "The developer must contact AWS Support to request approval to use the same bucket name.",
+          "Bucket names go to the highest bidder. The developer must outbid the current bucket owner.",
+          "Bucket names are unique to the Region that they are created in. If the requested bucket name is not available, the developer must create the images-bucket in a different Region."
+        ],
+        "answer": [
+          "Bucket names are globally unique. If the requested bucket name is not available, the developer must rename the bucket."
+        ]
+      },
+      {
+        "id": 14,
+        "question": "A developer is using Amazon Simple Storage Service (Amazon S3) to host a static website in a bucket that is called frank-martha-cafe. This bucket is in the us-east-1 Region. Which URL is the virtual-hosted-style URL for the website?",
+        "options": [
+          "https://www.frank-martha-cafe.s3-website-us-east-1.amazonaws.com",
+          "https://frank-martha-cafe.s3-website-us-east-1.amazonaws.com",
+          "https://frank-martha-cafe.s3-us-east-1.amazonaws.com",
+          "https://s3-website-us-east-1.amazonaws.com/frank-martha-cafe"
+        ],
+        "answer": [
+          "https://frank-martha-cafe.s3-website-us-east-1.amazonaws.com"
+        ]
+      },
+      {
+        "id": 15,
+        "question": "After versioning is enabled on an Amazon Simple Storage Service (Amazon S3) bucket, it can be disabled.",
+        "options": [
+          "True",
+          "False"
+        ],
+        "answer": [
+          "False"
+        ]
+      },
+      {
+        "id": 16,
+        "question": "What is the largest size of an object that a user can upload to Amazon Simple Storage Service (Amazon S3) in a single PUT operation?",
+        "options": [
+          "100 MB",
+          "5 TB",
+          "5 GB",
+          "1 GB"
+        ],
+        "answer": [
+          "5 GB"
+        ]
+      },
+      {
+        "id": 17,
+        "question": "A developer uses an Amazon Simple Storage Service (Amazon S3) bucket. They want to allow a certain AWS Identity and Access Management (IAM) user to perform any S3 operations on the bucket and its objects. They also want to follow AWS recommendations for granting permissions. Which mechanism should the developer apply to the bucket?",
+        "options": [
+          "IAM policy",
+          "Bucket access control list (ACL)",
+          "Bucket policy",
+          "Cross-Origin resource Sharing (CORS)"
+        ],
+        "answer": [
+          "Bucket policy"
+        ]
+      },
+      {
+        "id": 18,
+        "question": "A developer wants to allow a user to download private objects directly from an Amazon Simple Storage Service (Amazon S3) bucket without needing AWS security credentials or permissions. What can the developer share with the user to grant them time-limited access to the objects?",
+        "options": [
+          "A presigned URL",
+          "A temporary token",
+          "The bucket endpoint URL",
+          "Their AWS account root user credentials"
+        ],
+        "answer": [
+          "A presigned URL"
+        ]
+      },
+      {
+        "id": 19,
+        "question": "Which method can be used to encrypt Amazon Simple Storage Service (Amazon S3) objects in transit?",
+        "options": [
+          "Server-Side Encryption with AWS KMS-Managed Keys (SSE-KMS)",
+          "Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)",
+          "Server-Side Encryption with Customer-Provided Keys (SSE-C)",
+          "Secure Sockets Layer/Transport Layer Security (SSL/TLS)"
+        ],
+        "answer": [
+          "Secure Sockets Layer/Transport Layer Security (SSL/TLS)"
+        ]
+      },
+      {
+        "id": 20,
+        "question": "A developer hosts a static website in an Amazon Simple Storage Service (Amazon S3) bucket. The website references image objects in another S3 bucket. However, these images do not display on the website. What could be the problem?",
+        "options": [
+          "The security group of the S3 bucket does not include an inbound rule to allow HTTP traffic on port 80.",
+          "Amazon S3 does not support object sharing between buckets.",
+          "Cross-Origin Resource Sharing (CORS) has not been enabled on the bucket where the assets are stored.",
+          "Cross-Region Replication (CRR) has not been enabled on the bucket where the assets are stored."
+        ],
+        "answer": [
+          "Cross-Origin Resource Sharing (CORS) has not been enabled on the bucket where the assets are stored."
+        ]
+      },
+      {
+        "id": 21,
+        "question": "Which option is the Amazon Web Services (AWS) customer responsible for under the AWS shared responsibility model? (Select TWO.)",
+        "options": [
+          "Security group configuration",
+          "Physical servers",
+          "Client-side data",
+          "Edge location infrastructure",
+          "Availability Zone security"
+        ],
+        "answer": [
+          "Security group configuration",
+          "Client-side data"
+        ]
+      },
+      {
+        "id": 22,
+        "question": "Which AWS Identity and Access Management (IAM) resource explicitly grants or denies permissions to a user or group of users?",
+        "options": [
+          "IAM roles",
+          "IAM users",
+          "IAM groups",
+          "IAM policies"
+        ],
+        "answer": [
+          "IAM policies"
+        ]
+      },
+      {
+        "id": 23,
+        "question": "What is the correct term for the process of verifying a user's identity as a developer?",
+        "options": [
+          "Endorsement",
+          "Authentication",
+          "Confirmation",
+          "Authorization"
+        ],
+        "answer": [
+          "Authentication"
+        ]
+      },
+      {
+        "id": 24,
+        "question": "Which statements about IAM user authentication are true? (Select TWO.)",
+        "options": [
+          "AWS credentials to authenticate with any supported services must be provided.",
+          "A user name and password to authenticate to the console must be provided.",
+          "A .pem or .ppk file is used to authenticate programmatically to the AWS application programming interface (API).",
+          "It is a best practice to use the account root user credentials to authenticate programmatically by using the AWS Command Line Interface (AWS CLI).",
+          "Each AWS account can have only one administrator who manages other IAM users."
+        ],
+        "answer": [
+          "AWS credentials to authenticate with any supported services must be provided.",
+          "A user name and password to authenticate to the console must be provided."
+        ]
+      },
+      {
+        "id": 25,
+        "question": "Which suggestion is an Amazon Web Services (AWS) recommendation for securing AWS credentials for applications that run on Amazon Elastic Compute Cloud (Amazon EC2) instances?",
+        "options": [
+          "Embed AWS credentials in the software development kit (SDK) client code.",
+          "Store credentials in local AWS configuration files.",
+          "Create an AWS Identity and Access Management (IAM) role and attach it to the EC2 instance.",
+          "Create an AWS Identity and Access Management (IAM) user and attach it to the EC2 instance."
+        ],
+        "answer": [
+          "Create an AWS Identity and Access Management (IAM) role and attach it to the EC2 instance."
+        ]
+      },
+      {
+        "id": 26,
+        "question": "What is the format of AWS Identity and Access Management (IAM) policies that define the allowable API calls an entity can invoke?",
+        "options": [
+          "YAML Ain’t Markup Language (YAML)",
+          "Security Assertion Markup Language (SAML)",
+          "Comma-separated values (CSV)",
+          "JavaScript Object Notation (JSON)"
+        ],
+        "answer": [
+          "JavaScript Object Notation (JSON)"
+        ]
+      },
+      {
+        "id": 27,
+        "question": "An administrator created an AWS Identity and Access Management (IAM) group called managers within an AWS account. A _____ policy is attached to the managers group. It allows managers to read from and write to an Amazon Simple Storage Service (Amazon S3) bucket in the same AWS account. What is this type of policy?",
+        "options": [
+          "Identity-based",
+          "Resource-based",
+          "Cross-account access",
+          "AdministratorAccess managed"
+        ],
+        "answer": [
+          "Identity-based"
+        ]
+      },
+      {
+        "id": 28,
+        "question": "Which statement reflects best practices when granting permissions to users, groups, roles, and resources?",
+        "options": [
+          "Create policies that allow broad access and then limit permissions as needed, based on usage.",
+          "Use the account root user for routine tasks that the administrator performs.",
+          "Create policies that follow the principle of least privilege.",
+          "Do not set policies for individual resources."
+        ],
+        "answer": [
+          "Create policies that follow the principle of least privilege."
+        ]
+      },
+      {
+        "id": 29,
+        "question": "What is the effect of the following policy statement?\n\n{\n \"Effect\": \"Deny\",\n \"Action\": [\n \"dynamodb:*\",\n \"s3:*\"\n ],\n \"NotResource\": [\n \"arn:aws:dynamodb:region:account-number:table/pollynotes\",\n \"arn:aws:s3:::polly-notes-web\",\n \"arn:aws:s3:::polly-notes-mp3/*\"\n ]\n}",
+        "options": [
+          "Denies actions on DynamoDB or Amazon S3 resources except for the resources that are listed in the NotResource element",
+          "Denies the ability to write to the pollynotes DynamoDB table",
+          "Denies the ability to read from the polly-notes-web S3 bucket",
+          "Denies actions on the DynamoDB table or S3 buckets that are listed in the NotResources element"
+        ],
+        "answer": [
+          "Denies actions on DynamoDB or Amazon S3 resources except for the resources that are listed in the NotResource element"
+        ]
+      },
+      {
+        "id": 30,
+        "question": "Which statements are true about evaluation logic for AWS Identity and Access Management (IAM) policies? (Select TWO.)",
+        "options": [
+          "You cannot have deny and allow statements in the same policy.",
+          "An explicit allow overrides an explicit deny.",
+          "An explicit deny overrides an explicit allow.",
+          "By default, all requests are denied.",
+          "By default, all requests are allowed."
+        ],
+        "answer": [
+          "An explicit deny overrides an explicit allow.",
+          "By default, all requests are denied."
+        ]
+      },
+      {
+        "id": 31,
+        "question": "Which statement best describes Amazon DynamoDB?",
+        "options": [
+          "An in-memory data store that can boost the performance of databases",
+          "A graph database engine that is optimized for storing billions of relationships",
+          "A relational database that is built for the cloud and is compatible with MySQL and PostgreSQL",
+          "A key-value and document database that scales horizontally and works well for internet-scale applications"
+        ],
+        "answer": [
+          "A key-value and document database that scales horizontally and works well for internet-scale applications"
+        ]
+      },
+      {
+        "id": 32,
+        "question": "Which component is part of an Amazon DynamoDB table?",
+        "options": [
+          "Predefined schema",
+          "SQL-based queries",
+          "Attributes",
+          "Columns"
+        ],
+        "answer": [
+          "Attributes"
+        ]
+      },
+      {
+        "id": 33,
+        "question": "An Amazon DynamoDB table called SensorReadings captures sensor readings. These readings include a sensor ID attribute that acts as the partition key, and a timestamp attribute that is the sort key. Which statement is true?",
+        "options": [
+          "The sensor ID together with the timestamp represent a simple primary key.",
+          "It is impossible for two items in the SensorReadings table to have the same partition key.",
+          "It is impossible for two items in the SensorReadings table to have the same sort key.",
+          "It is impossible for two items in the SensorReadings table to have the same primary key."
+        ],
+        "answer": [
+          "It is impossible for two items in the SensorReadings table to have the same primary key."
+        ]
+      },
+      {
+        "id": 34,
+        "question": "Which statement about Amazon DynamoDB partitions is true?",
+        "options": [
+          "DynamoDB stores data in partitions and chooses the partition based on the range attribute.",
+          "If a table has a simple primary key (partition key only), DynamoDB stores and retrieves each item based on its hash attribute.",
+          "If a table has a composite primary key, DynamoDB will sort the items based on the sort key before selecting the partition for the item.",
+          "A developer writes a hash function to tell DynamoDB how to partition the items."
+        ],
+        "answer": [
+          "If a table has a simple primary key (partition key only), DynamoDB stores and retrieves each item based on its hash attribute."
+        ]
+      },
+      {
+        "id": 35,
+        "question": "Suppose that a developer has a restaurants database table that can be queried by name (the partition key), or by name and location (the sort key). What should the developer do if they also want to query by type of cuisine and average customer rating?",
+        "options": [
+          "Set up a local secondary index on cuisine and customer rating.",
+          "Set up a global secondary index on cuisine and customer rating.",
+          "Change the primary key on the restaurant table to be a complex primary key based on cuisine and customer rating.",
+          "Perform a query that uses the cuisine and average customer rating attributes."
+        ],
+        "answer": [
+          "Set up a global secondary index on cuisine and customer rating."
+        ]
+      },
+      {
+        "id": 36,
+        "question": "A video game developer who uses Amazon DynamoDB wants to ensure that players’ profiles are updated correctly when they make in-game purchases. This process requires multiple updates as part of a single user action. What is the best choice to write this developer's application to manage these complex, all-or-nothing changes?",
+        "options": [
+          "Add an Amazon DynamoDB Accelerator (DAX) cluster.",
+          "Implement global tables.",
+          "Create application code to check that all parts of the transaction were written successfully, and then roll back the update if any part failed.",
+          "Use DynamoDB transactions."
+        ],
+        "answer": [
+          "Use DynamoDB transactions."
+        ]
+      },
+      {
+        "id": 37,
+        "question": "Which scenarios are example use cases for Amazon DynamoDB Streams? (Select TWO.)",
+        "options": [
+          "An application that requires the fastest possible response time for reads to support real-time bidding",
+          "An application that requires repeated reads against a large set of regional weather data to perform a long-running analysis",
+          "An application that automatically sends notifications to the mobile devices of all friends in a group when one friend uploads a new picture",
+          "An application that must monitor changes to a DynamoDB table and take action on specific changes when a value reaches a certain threshold",
+          "An application that requires an in-memory data store"
+        ],
+        "answer": [
+          "An application that automatically sends notifications to the mobile devices of all friends in a group when one friend uploads a new picture",
+          "An application that must monitor changes to a DynamoDB table and take action on specific changes when a value reaches a certain threshold"
+        ]
+      },
+      {
+        "id": 38,
+        "question": "Which statement about global tables is true?",
+        "options": [
+          "Global tables provide a managed solution for replicating tables within a single AWS Region.",
+          "Global tables use Amazon Simple Storage Service (Amazon S3) to propagate changes between replicas.",
+          "When a global table is created, Amazon DynamoDB performs all necessary tasks to create identical tables and propagate ongoing data changes to specified Regions.",
+          "With a global table, Amazon DynamoDB supports partial replication of some of the items in a table."
+        ],
+        "answer": [
+          "When a global table is created, Amazon DynamoDB performs all necessary tasks to create identical tables and propagate ongoing data changes to specified Regions."
+        ]
+      },
+      {
+        "id": 39,
+        "question": "How far back in days can an Amazon DynamoDB table be restored by using point-in-time recovery?",
+        "options": [
+          "The last week",
+          "The last 10 days",
+          "The last 35 days",
+          "The last calendar month"
+        ],
+        "answer": [
+          "The last 35 days"
+        ]
+      },
+      {
+        "id": 40,
+        "question": "Which statement describes Amazon DynamoDB application programming interface (API) control operations that can be invoked by an application?",
+        "options": [
+          "Create and manage DynamoDB tables.",
+          "Create, read, update, and delete data in a table.",
+          "Get and write batches of items in a DynamoDB table.",
+          "Make coordinated, all-or-nothing changes to multiple items both within and across tables."
+        ],
+        "answer": [
+          "Create and manage DynamoDB tables."
+        ]
+      },
+      {
+        "id": 41,
+        "question": "Which phrase best describes a RESTful API?",
+        "options": [
+          "An API that uses HTTP to communicate between client and server",
+          "A proxy that exists between client and server to handle common problems that occur with API-driven applications",
+          "An API that follows the principles of the Representational State Transfer style",
+          "An API that resides on the web server"
+        ],
+        "answer": [
+          "An API that follows the principles of the Representational State Transfer style"
+        ]
+      },
+      {
+        "id": 42,
+        "question": "Which option suggests the use of WebSocket APIs?",
+        "options": [
+          "An order processing application returns an order number to each customer when they submit an order.",
+          "A batch process bundles orders and sends them to a fulfillment center application.",
+          "A real-time chat application lets customers talk to customer support about their orders.",
+          "A reporting application gives the sales team access to static daily reports from their phones."
+        ],
+        "answer": [
+          "A real-time chat application lets customers talk to customer support about their orders."
+        ]
+      },
+      {
+        "id": 43,
+        "question": "Which use case suggests using Amazon API Gateway HTTP APIs?",
+        "options": [
+          "An application needs an API proxy in front of an AWS Lambda function.",
+          "An application must transform a response from an AWS Lambda function before returning the response to the client.",
+          "A developer wants to use mock endpoints to test their API.",
+          "A developer wants to assign different API quotas by client."
+        ],
+        "answer": [
+          "An application needs an API proxy in front of an AWS Lambda function."
+        ]
+      },
+      {
+        "id": 44,
+        "question": "Which statement about Amazon API Gateway integrations is true?",
+        "options": [
+          "A first-class integration connects an API Gateway HTTP API route to an external third-party service API.",
+          "A developer can use HTTP proxy integrations to direct a route to a resource on the internet.",
+          "API Gateway cannot access resources within a virtual private cloud (VPC).",
+          "An API integration request encapsulates an HTTP request that the backend receives and is always different from the method request that the client submits."
+        ],
+        "answer": [
+          "A developer can use HTTP proxy integrations to direct a route to a resource on the internet."
+        ]
+      },
+      {
+        "id": 45,
+        "question": "An application that uses Amazon API Gateway must capture contact information from a third-party client application. The client application sends given name, surname, business phone, and cell phone. The backend application database has only two fields: name and mobile phone. Which option requires the fewest application changes?",
+        "options": [
+          "Export the API definition and use it to update the client.",
+          "Use a mapping template to transform the request before it is sent to the database.",
+          "Create a usage plan that describes the fields and applies only to this client.",
+          "Use a first-class integration to connect the client to the database."
+        ],
+        "answer": [
+          "Use a mapping template to transform the request before it is sent to the database."
+        ]
+      },
+      {
+        "id": 46,
+        "question": "Which elements are part of the base URI that AWS generates for an Amazon API Gateway API?",
+        "options": [
+          "Region and stage name",
+          "API identifier and version",
+          "Account ID and stage name",
+          "Region and version"
+        ],
+        "answer": [
+          "Region and stage name"
+        ]
+      },
+      {
+        "id": 47,
+        "question": "Given this snippet:\n\naws apigatewayv2 create-route \\\n --api-id 03z50l670a \\\n --<?> \\\n --target arn:aws:lambda:us-east-2:AcctID:function:readFn\n\nWhich option could replace the <?> to create an API route that returns an individual product value from an online catalog?",
+        "options": [
+          "route-key 'GET /products/{product_id}' \\",
+          "route-key 'PUT /products'",
+          "route-selection-expression '$GET/product'",
+          "route-selection-expression 'PUT /products/{proxy+}' \\"
+        ],
+        "answer": [
+          "route-key 'GET /products/{product_id}' \\"
+        ]
+      },
+      {
+        "id": 48,
+        "question": "Which statement about Amazon API Gateway stages is true?",
+        "options": [
+          "Stage names are sequentially assigned based on the API version.",
+          "Any stage on any API type can be set to autodeploy.",
+          "Developers can use stage variables to connect different stages to different backends.",
+          "Developers should avoid creating different stages for each development environment."
+        ],
+        "answer": [
+          "Developers can use stage variables to connect different stages to different backends."
+        ]
+      },
+      {
+        "id": 49,
+        "question": "A security team wants to know how to protect APIs in their internet application from common web exploits, like SQL injection or cross-site scripting. Which solution most directly addresses their specific concern?",
+        "options": [
+          "Set throttling limits on their API methods in Amazon API Gateway.",
+          "Set all of their APIs to use private endpoints.",
+          "Configure a JSON Web Token (JWT)-based authorizer for Amazon API Gateway.",
+          "Use AWS WAF with Amazon API Gateway."
+        ],
+        "answer": [
+          "Use AWS WAF with Amazon API Gateway."
+        ]
+      },
+      {
+        "id": 50,
+        "question": "What does the Amazon API Gateway integration Latency metric tell the user?",
+        "options": [
+          "Frequency of server-side errors that affect latency",
+          "Speed of the API response back to the client",
+          "Responsiveness of the backend",
+          "How often requests are throttled"
+        ],
+        "answer": [
+          "Responsiveness of the backend"
+        ]
+      }
+    ]
+  }

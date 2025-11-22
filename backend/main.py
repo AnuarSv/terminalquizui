@@ -22,8 +22,8 @@ app.mount("/db", StaticFiles(directory=str(db_path)), name="db")
 
 @app.get("/api/blocks")
 async def get_blocks():
-    """Returns list of available blocks (1-5)"""
-    return {"blocks": [1, 2, 3, 4, 5]}
+    """Returns list of available blocks (1-6)"""
+    return {"blocks": [1, 2, 3, 4, 5, 6]}
 
 
 def transform_block5_question(q, question_id):
@@ -92,10 +92,74 @@ def transform_block5_question(q, question_id):
     return transformed
 
 
+def transform_block6_question(q, question_id):
+    """Transform block6 question format to standard format"""
+    # Get correct answers from 'answer' field (array)
+    correct_answers = q.get("answer", [])
+    if not isinstance(correct_answers, list):
+        correct_answers = [correct_answers] if correct_answers else []
+    
+    # Determine question type based on number of correct answers
+    if len(correct_answers) > 1:
+        q_type = "multiple_choice"
+    else:
+        q_type = "single_choice"
+    
+    # Normalize correct answers for matching
+    correct_normalized = [str(a).strip() for a in correct_answers]
+    
+    # Get options from 'options' field
+    raw_options = q.get("options", [])
+    if not raw_options:
+        return {
+            "id": question_id,
+            "text": q.get("question", ""),
+            "type": q_type,
+            "options": []
+        }
+    
+    # Transform options - use ONLY the options provided, mark correct ones
+    options = []
+    for idx, opt_text in enumerate(raw_options):
+        opt_text_str = str(opt_text).strip()
+        
+        # Extract option ID (A, B, C, etc. or 1, 2, 3, etc. or use index)
+        if "." in opt_text_str and opt_text_str[0].isalnum():
+            # Has prefix like "A. " or "1. "
+            opt_id = opt_text_str.split(".", 1)[0].strip()
+            opt_text_clean = opt_text_str.split(".", 1)[1].strip()
+        else:
+            # No prefix, use letter (A, B, C...) or number
+            opt_id = chr(65 + idx) if idx < 26 else str(idx + 1)
+            opt_text_clean = opt_text_str
+        
+        # Check if this option is in correct_answers (exact match)
+        is_correct = (
+            opt_text_str in correct_normalized or
+            opt_text_clean in correct_normalized
+        )
+        
+        options.append({
+            "id": opt_id,
+            "text": opt_text_clean,
+            "is_correct": is_correct
+        })
+    
+    # Build transformed question
+    transformed = {
+        "id": question_id,
+        "text": q.get("question", ""),
+        "type": q_type,
+        "options": options
+    }
+    
+    return transformed
+
+
 @app.get("/api/questions/{block_id}")
 async def get_questions(block_id: int):
     """Reads and returns questions from block{block_id}.json"""
-    if block_id not in [1, 2, 3, 4, 5]:
+    if block_id not in [1, 2, 3, 4, 5, 6]:
         raise HTTPException(status_code=404, detail="Block not found")
     
     questions_path = db_path / "questions" / f"block{block_id}.json"
@@ -121,6 +185,25 @@ async def get_questions(block_id: int):
             return {
                 "meta": {
                     "topic": data.get("title", "AWS Academy Cloud Foundation"),
+                    "source": "AWS Academy",
+                    "version": "1.0",
+                    "total_questions": len(all_questions)
+                },
+                "questions": all_questions
+            }
+        
+        # Transform block6 format if needed
+        if block_id == 6:
+            # Block6 has questions array directly
+            all_questions = []
+            for q in data.get("questions", []):
+                question_id = q.get("id", len(all_questions) + 1)
+                transformed = transform_block6_question(q, question_id)
+                all_questions.append(transformed)
+            
+            return {
+                "meta": {
+                    "topic": data.get("title", "AWS Academy Cloud Foundations Quiz"),
                     "source": "AWS Academy",
                     "version": "1.0",
                     "total_questions": len(all_questions)

@@ -85,7 +85,7 @@ export default function Menu() {
       )}
 
       <div className="block-selection">
-        {[1, 2, 3, 4, 5].map((blockId) => (
+        {[1, 2, 3, 4, 5, 6].map((blockId) => (
           <button
             key={blockId}
             onClick={() => handleBlockSelect(blockId)}
