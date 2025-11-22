@@ -1,0 +1,216 @@
+{
+    "meta": {
+      "topic": "IPv4 Subnetting, VLSM & Routing Scenarios",
+      "source": "Variant 1 & 2 Worksheets",
+      "version": "3.0",
+      "created_at": "2023-10-27",
+      "total_questions": 22
+    },
+    "questions": [
+      {
+        "section": "Theory (Short Answer)",
+        "id": 1,
+        "text": "How many bits are in an IPv4 address?",
+        "type": "text_input",
+        "match_mode": "fuzzy",
+        "accepted_answers": ["32", "32 bits", "32-bit"],
+        "explanation": "IPv4 addresses are 32-bit integers."
+      },
+      {
+        "section": "Theory (Short Answer)",
+        "id": 2,
+        "text": "What does a subnet mask define?",
+        "type": "text_input",
+        "match_mode": "fuzzy",
+        "accepted_answers": ["network portion", "network size", "network bits", "boundary", "prefix"],
+        "explanation": "The subnet mask distinguishes the Network portion from the Host portion of the IP address."
+      },
+      {
+        "section": "Theory (Short Answer)",
+        "id": 3,
+        "text": "What type of address is used for one destination?",
+        "type": "text_input",
+        "match_mode": "exact",
+        "accepted_answers": ["unicast"],
+        "explanation": "Unicast is one-to-one communication."
+      },
+      {
+        "section": "Theory (Short Answer)",
+        "id": 4,
+        "text": "Who manages global IP address allocation?",
+        "type": "text_input",
+        "match_mode": "exact",
+        "accepted_answers": ["iana"],
+        "explanation": "IANA (Internet Assigned Numbers Authority) manages global allocation."
+      },
+      {
+        "section": "Theory (Short Answer)",
+        "id": 5,
+        "text": "What is the function of NAT?",
+        "type": "text_input",
+        "match_mode": "fuzzy",
+        "accepted_answers": ["translate", "translation", "private to public", "hide internal ip", "conserve ipv4"],
+        "explanation": "NAT (Network Address Translation) translates private IP addresses to public IP addresses to conserve IPv4 space."
+      },
+      {
+        "section": "Theory (Short Answer)",
+        "id": 6,
+        "text": "What type of address is sent to all devices on a network?",
+        "type": "text_input",
+        "match_mode": "exact",
+        "accepted_answers": ["broadcast"],
+        "explanation": "Broadcast frames/packets are processed by all devices in the broadcast domain."
+      },
+      {
+        "section": "Theory (Short Answer)",
+        "id": 7,
+        "text": "What does /16 represent in an IP address?",
+        "type": "text_input",
+        "match_mode": "exact",
+        "accepted_answers": ["subnet mask"],
+        "explanation": "It represents the subnet mask (CIDR notation), meaning the first 16 bits are the network."
+      },
+      {
+        "section": "Theory (Short Answer)",
+        "id": 8,
+        "text": "What decreases when the prefix length increases (e.g., from /24 to /26)?",
+        "type": "text_input",
+        "match_mode": "fuzzy",
+        "accepted_answers": ["hosts", "number of hosts", "host bits", "usable ips"],
+        "explanation": "More bits for the network means fewer bits left for hosts."
+      },
+      {
+        "section": "Theory (Short Answer)",
+        "id": 9,
+        "text": "What is the process of dividing networks into smaller networks called?",
+        "type": "text_input",
+        "match_mode": "exact",
+        "accepted_answers": ["subnetting"],
+        "explanation": "Subnetting is the practice of dividing a network into two or more smaller networks."
+      },
+      {
+        "section": "Subnetting Calculations",
+        "id": 10,
+        "text": "What is the broadcast address of 192.168.10.0/26?",
+        "type": "text_input",
+        "match_mode": "exact",
+        "accepted_answers": ["192.168.10.63"],
+        "explanation": "/26 means block size is 64. Range is .0 to .63. Broadcast is the last IP: .63."
+      },
+      {
+        "section": "Subnetting Calculations",
+        "id": 11,
+        "text": "How many usable hosts are in a /29 network?",
+        "type": "text_input",
+        "match_mode": "exact",
+        "accepted_answers": ["6"],
+        "explanation": "32 - 29 = 3 host bits. 2^3 - 2 = 6 usable hosts."
+      },
+      {
+        "section": "Subnetting Calculations",
+        "id": 12,
+        "text": "What is the subnet mask for /27?",
+        "type": "text_input",
+        "match_mode": "exact",
+        "accepted_answers": ["255.255.255.224"],
+        "explanation": "/27 means 3 bits borrowed in the last octet. 128+64+32 = 224."
+      },
+      {
+        "section": "Subnetting Calculations",
+        "id": 13,
+        "text": "Find the network address for IP 10.10.5.34/24",
+        "type": "text_input",
+        "match_mode": "exact",
+        "accepted_answers": ["10.10.5.0"],
+        "explanation": "/24 means the first 3 octets are the network. Just zero out the last octet."
+      },
+      {
+        "section": "Subnetting Calculations",
+        "id": 14,
+        "text": "Which subnet does 172.16.2.200 belong to if the mask is /20?",
+        "type": "text_input",
+        "match_mode": "exact",
+        "accepted_answers": ["172.16.0.0", "172.16.0.0/20"],
+        "explanation": "/20 is 255.255.240.0. Block size in 3rd octet is 16. Ranges: 0-15, 16-31. 2 falls in 0-15. Network is 172.16.0.0."
+      },
+      {
+        "section": "Subnetting Calculations",
+        "id": 15,
+        "text": "What is the first usable host in 192.168.1.128/25?",
+        "type": "text_input",
+        "match_mode": "exact",
+        "accepted_answers": ["192.168.1.129"],
+        "explanation": "Network address is .128. First usable is Network + 1 = .129."
+      },
+      {
+        "section": "Subnetting Calculations",
+        "id": 16,
+        "text": "How many total IPs (including net/broadcast) are there in a /28 network?",
+        "type": "text_input",
+        "match_mode": "exact",
+        "accepted_answers": ["16"],
+        "explanation": "32 - 28 = 4 bits. 2^4 = 16 total IPs."
+      },
+      {
+        "section": "Subnetting Calculations",
+        "id": 17,
+        "text": "Find the broadcast address of 10.0.15.0/24",
+        "type": "text_input",
+        "match_mode": "exact",
+        "accepted_answers": ["10.0.15.255"],
+        "explanation": "For /24, the broadcast is always .255 in the last octet."
+      },
+      {
+        "section": "Subnetting Calculations",
+        "id": 18,
+        "text": "What subnet mask gives 254 usable hosts?",
+        "type": "text_input",
+        "match_mode": "fuzzy",
+        "accepted_answers": ["255.255.255.0", "/24"],
+        "explanation": "254 hosts requires 8 host bits (2^8 - 2 = 254). This is a /24 mask."
+      },
+      {
+        "section": "Subnetting Calculations",
+        "id": 19,
+        "text": "What is the last usable host in 192.168.2.64/26?",
+        "type": "text_input",
+        "match_mode": "exact",
+        "accepted_answers": ["192.168.2.126"],
+        "explanation": "/26 block size is 64. Range: .64 to .127. Broadcast is .127. Last usable is .126."
+      },
+      {
+        "section": "Scenarios (Diagrams)",
+        "id": 20,
+        "text": "Refer to the VLSM diagram (Network A needs 120 hosts, Link A needs 2 hosts). Which network addresses should be used for Link A and Network A? (Choose two)",
+        "type": "multiple_choice",
+        "image_context": "diagram_vlsm_routers",
+        "tags": ["vlsm", "design"],
+        "explanation": "Network A needs 120 hosts -> /25 (128 IPs). Option B (172.16.3.128/25) fits. Link A needs 2 hosts -> /30. It must not overlap with Marketing (.32/27), Sales (.64/27), Admin (.96/27) or Net A (.128/25). Option D (172.16.3.0/30) uses range 0-3, which is free.",
+        "options": [
+          { "id": "A", "text": "Network A - 172.16.3.48/26", "is_correct": false },
+          { "id": "B", "text": "Network A - 172.16.3.128/25", "is_correct": true },
+          { "id": "C", "text": "Network A - 172.16.3.192/26", "is_correct": false },
+          { "id": "D", "text": "Link A - 172.16.3.0/30", "is_correct": true },
+          { "id": "E", "text": "Link A - 172.16.3.40/30", "is_correct": false },
+          { "id": "F", "text": "Link A - 172.16.3.112/30", "is_correct": false }
+        ]
+      },
+      {
+        "section": "Scenarios (Diagrams)",
+        "id": 21,
+        "text": "Refer to the VLAN diagram. All hosts have connectivity. Which statements describe the addressing scheme? (Choose three)",
+        "type": "multiple_choice",
+        "image_context": "diagram_vlan_hosts",
+        "tags": ["vlan", "subnetting"],
+        "explanation": "VLAN1 (84 hosts) and VLAN2 (114 hosts) both need /25 (128 IPs) because /26 (64 IPs) is too small. So mask is 255.255.255.128 (B). 172.16.1.25 fits in the first /25 block (0-127) for VLAN1 (C). The router connects two different networks/VLANs, so it must have multiple IP addresses (or subinterfaces) configured (F).",
+        "options": [
+          { "id": "A", "text": "The subnet mask in use is 255.255.255.192", "is_correct": false },
+          { "id": "B", "text": "The subnet mask in use is 255.255.255.128", "is_correct": true },
+          { "id": "C", "text": "The IP address 172.16.1.25 can be assigned to hosts in VLAN1", "is_correct": true },
+          { "id": "D", "text": "The IP address 172.16.1.205 can be assigned to hosts in VLAN1", "is_correct": false },
+          { "id": "E", "text": "The LAN interface of the router is configured with one IP address", "is_correct": false },
+          { "id": "F", "text": "The LAN interface of the router is configured with multiple IP addresses", "is_correct": true }
+        ]
+      }
+    ]
+  }

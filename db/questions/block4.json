@@ -1,0 +1,805 @@
+{
+    "meta": {
+      "topic": "Final Exam: Comprehensive Review (Layers 1-7, Security, Routing)",
+      "source": "Provided Text & Exam Photos",
+      "version": "4.0",
+      "created_at": "2023-10-27",
+      "total_questions": 65
+    },
+    "questions": [
+      {
+        "id": 1,
+        "text": "Which device operates primarily at Layer 2 of the OSI model?",
+        "type": "single_choice",
+        "tags": ["layer-2", "devices"],
+        "options": [
+          { "id": "A", "text": "Router", "is_correct": false },
+          { "id": "B", "text": "Switch", "is_correct": true },
+          { "id": "C", "text": "Hub", "is_correct": false },
+          { "id": "D", "text": "Firewall", "is_correct": false }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "What is the main function of a default gateway?",
+        "type": "single_choice",
+        "tags": ["routing", "concepts"],
+        "explanation": "A default gateway is the router interface that connects the local network to remote networks (like the Internet).",
+        "options": [
+          { "id": "A", "text": "To provide DNS resolution", "is_correct": false },
+          { "id": "B", "text": "To connect to remote networks", "is_correct": true },
+          { "id": "C", "text": "To assign IP addresses", "is_correct": false },
+          { "id": "D", "text": "To block unwanted traffic", "is_correct": false }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "Which cable is used to connect a PC to a switch?",
+        "type": "single_choice",
+        "tags": ["cabling", "layer-1"],
+        "explanation": "PC and Switch transmit on different pins, so a Straight-through cable is used. (Like devices use Crossover).",
+        "options": [
+          { "id": "A", "text": "Crossover cable", "is_correct": false },
+          { "id": "B", "text": "Straight-through cable", "is_correct": true },
+          { "id": "C", "text": "Fiber optic cable", "is_correct": false },
+          { "id": "D", "text": "Console cable", "is_correct": false }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "What is the purpose of a MAC address?",
+        "type": "single_choice",
+        "tags": ["addressing", "layer-2"],
+        "options": [
+          { "id": "A", "text": "Identifies devices on the same IP network", "is_correct": false },
+          { "id": "B", "text": "Identifies devices at the data link layer (Physical addressing)", "is_correct": true },
+          { "id": "C", "text": "Provides IP routing", "is_correct": false },
+          { "id": "D", "text": "Encrypts network traffic", "is_correct": false }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "What is the default VLAN on a Cisco switch?",
+        "type": "single_choice",
+        "tags": ["vlan", "switching"],
+        "options": [
+          { "id": "A", "text": "VLAN 0", "is_correct": false },
+          { "id": "B", "text": "VLAN 10", "is_correct": false },
+          { "id": "C", "text": "VLAN 1", "is_correct": true },
+          { "id": "D", "text": "VLAN 99", "is_correct": false }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "Which layer of the OSI model is responsible for data encryption and formatting?",
+        "type": "single_choice",
+        "tags": ["layer-6", "osi"],
+        "options": [
+          { "id": "A", "text": "Session", "is_correct": false },
+          { "id": "B", "text": "Presentation", "is_correct": true },
+          { "id": "C", "text": "Network", "is_correct": false },
+          { "id": "D", "text": "Transport", "is_correct": false }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "Which protocol provides reliable, connection-oriented data transfer?",
+        "type": "single_choice",
+        "tags": ["layer-4", "protocols"],
+        "options": [
+          { "id": "A", "text": "TCP", "is_correct": true },
+          { "id": "B", "text": "UDP", "is_correct": false },
+          { "id": "C", "text": "ICMP", "is_correct": false },
+          { "id": "D", "text": "IP", "is_correct": false }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "In the TCP/IP model, which layer corresponds to the OSI Network layer?",
+        "type": "single_choice",
+        "tags": ["models", "tcp-ip"],
+        "options": [
+          { "id": "A", "text": "Application", "is_correct": false },
+          { "id": "B", "text": "Internet", "is_correct": true },
+          { "id": "C", "text": "Transport", "is_correct": false },
+          { "id": "D", "text": "Link", "is_correct": false }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "Which tool captures and analyzes network packets?",
+        "type": "single_choice",
+        "tags": ["tools", "troubleshooting"],
+        "options": [
+          { "id": "A", "text": "Putty", "is_correct": false },
+          { "id": "B", "text": "Wireshark", "is_correct": true },
+          { "id": "C", "text": "Packet Tracer", "is_correct": false },
+          { "id": "D", "text": "Telnet", "is_correct": false }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "What is encapsulation in networking?",
+        "type": "single_choice",
+        "tags": ["concepts", "encapsulation"],
+        "options": [
+          { "id": "A", "text": "Adding headers/trailers around data as it moves down the stack", "is_correct": true },
+          { "id": "B", "text": "Encrypting data", "is_correct": false },
+          { "id": "C", "text": "Removing headers", "is_correct": false },
+          { "id": "D", "text": "Translating IP addresses", "is_correct": false }
+        ]
+      },
+      {
+        "id": 11,
+        "text": "What unit measures bandwidth?",
+        "type": "single_choice",
+        "tags": ["metrics", "layer-1"],
+        "options": [
+          { "id": "A", "text": "Bytes", "is_correct": false },
+          { "id": "B", "text": "Bits per second (bps)", "is_correct": true },
+          { "id": "C", "text": "Hertz", "is_correct": false },
+          { "id": "D", "text": "Megabytes per hour", "is_correct": false }
+        ]
+      },
+      {
+        "id": 12,
+        "text": "Which device converts digital signals to analog for transmission (and vice versa)?",
+        "type": "single_choice",
+        "tags": ["devices", "layer-1"],
+        "options": [
+          { "id": "A", "text": "Switch", "is_correct": false },
+          { "id": "B", "text": "Modem (Modulator-Demodulator)", "is_correct": true },
+          { "id": "C", "text": "Hub", "is_correct": false },
+          { "id": "D", "text": "Repeater", "is_correct": false }
+        ]
+      },
+      {
+        "id": 13,
+        "text": "Which cable type is most resistant to electromagnetic interference (EMI)?",
+        "type": "single_choice",
+        "tags": ["cabling", "layer-1"],
+        "explanation": "Fiber uses light, so it is immune to electrical interference.",
+        "options": [
+          { "id": "A", "text": "UTP", "is_correct": false },
+          { "id": "B", "text": "STP", "is_correct": false },
+          { "id": "C", "text": "Coaxial", "is_correct": false },
+          { "id": "D", "text": "Fiber optic", "is_correct": true }
+        ]
+      },
+      {
+        "id": 14,
+        "text": "What is the binary value of decimal 45?",
+        "type": "single_choice",
+        "tags": ["binary", "math"],
+        "explanation": "32 + 8 + 4 + 1 = 45. (101101)",
+        "options": [
+          { "id": "A", "text": "100101", "is_correct": false },
+          { "id": "B", "text": "101101", "is_correct": true },
+          { "id": "C", "text": "110011", "is_correct": false },
+          { "id": "D", "text": "1011010", "is_correct": false }
+        ]
+      },
+      {
+        "id": 15,
+        "text": "Which layer defines physical media characteristics (voltage, connectors)?",
+        "type": "single_choice",
+        "tags": ["layer-1", "osi"],
+        "options": [
+          { "id": "A", "text": "Network", "is_correct": false },
+          { "id": "B", "text": "Data Link", "is_correct": false },
+          { "id": "C", "text": "Physical", "is_correct": true },
+          { "id": "D", "text": "Transport", "is_correct": false }
+        ]
+      },
+      {
+        "id": 16,
+        "text": "Ethernet uses which access method?",
+        "type": "single_choice",
+        "tags": ["ethernet", "protocols"],
+        "options": [
+          { "id": "A", "text": "CSMA/CA", "is_correct": false },
+          { "id": "B", "text": "CSMA/CD (Carrier Sense Multiple Access / Collision Detection)", "is_correct": true },
+          { "id": "C", "text": "Token Ring", "is_correct": false },
+          { "id": "D", "text": "TDMA", "is_correct": false }
+        ]
+      },
+      {
+        "id": 17,
+        "text": "What is the frame delimiter in Ethernet?",
+        "type": "single_choice",
+        "tags": ["ethernet", "frame"],
+        "options": [
+          { "id": "A", "text": "Preamble / SFD", "is_correct": true },
+          { "id": "B", "text": "CRC", "is_correct": false },
+          { "id": "C", "text": "Source MAC", "is_correct": false },
+          { "id": "D", "text": "EtherType", "is_correct": false }
+        ]
+      },
+      {
+        "id": 18,
+        "text": "Switches use which table to forward frames?",
+        "type": "single_choice",
+        "tags": ["switching", "layer-2"],
+        "options": [
+          { "id": "A", "text": "ARP table", "is_correct": false },
+          { "id": "B", "text": "Routing table", "is_correct": false },
+          { "id": "C", "text": "MAC address table (CAM table)", "is_correct": true },
+          { "id": "D", "text": "IP address table", "is_correct": false }
+        ]
+      },
+      {
+        "id": 19,
+        "text": "What is the minimum Ethernet frame size?",
+        "type": "single_choice",
+        "tags": ["ethernet", "frame"],
+        "options": [
+          { "id": "A", "text": "46 bytes", "is_correct": false },
+          { "id": "B", "text": "64 bytes", "is_correct": true },
+          { "id": "C", "text": "128 bytes", "is_correct": false },
+          { "id": "D", "text": "512 bytes", "is_correct": false }
+        ]
+      },
+      {
+        "id": 20,
+        "text": "VLANs are used to:",
+        "type": "single_choice",
+        "tags": ["vlan", "concepts"],
+        "options": [
+          { "id": "A", "text": "Increase physical ports", "is_correct": false },
+          { "id": "B", "text": "Divide a LAN into logical segments (Broadcast Domains)", "is_correct": true },
+          { "id": "C", "text": "Reduce MAC addresses", "is_correct": false },
+          { "id": "D", "text": "Encrypt data", "is_correct": false }
+        ]
+      },
+      {
+        "id": 21,
+        "text": "Which command shows the routing table on a Cisco router?",
+        "type": "single_choice",
+        "tags": ["cli", "routing"],
+        "options": [
+          { "id": "A", "text": "show interfaces", "is_correct": false },
+          { "id": "B", "text": "show ip route", "is_correct": true },
+          { "id": "C", "text": "show arp", "is_correct": false },
+          { "id": "D", "text": "show version", "is_correct": false }
+        ]
+      },
+      {
+        "id": 22,
+        "text": "Which protocol maps IP addresses to MAC addresses?",
+        "type": "single_choice",
+        "tags": ["protocols", "arp"],
+        "options": [
+          { "id": "A", "text": "DNS", "is_correct": false },
+          { "id": "B", "text": "DHCP", "is_correct": false },
+          { "id": "C", "text": "ARP", "is_correct": true },
+          { "id": "D", "text": "ICMP", "is_correct": false }
+        ]
+      },
+      {
+        "id": 23,
+        "text": "What type of address is 192.168.1.1?",
+        "type": "single_choice",
+        "tags": ["ipv4", "addressing"],
+        "explanation": "192.168.x.x is a private range (RFC 1918).",
+        "options": [
+          { "id": "A", "text": "Public", "is_correct": false },
+          { "id": "B", "text": "Private", "is_correct": true },
+          { "id": "C", "text": "Multicast", "is_correct": false },
+          { "id": "D", "text": "Loopback", "is_correct": false }
+        ]
+      },
+      {
+        "id": 24,
+        "text": "Which device operates at Layer 3?",
+        "type": "single_choice",
+        "tags": ["layer-3", "devices"],
+        "options": [
+          { "id": "A", "text": "Switch", "is_correct": false },
+          { "id": "B", "text": "Router", "is_correct": true },
+          { "id": "C", "text": "Bridge", "is_correct": false },
+          { "id": "D", "text": "Hub", "is_correct": false }
+        ]
+      },
+      {
+        "id": 25,
+        "text": "What is the function of a default route?",
+        "type": "single_choice",
+        "tags": ["routing", "concepts"],
+        "options": [
+          { "id": "A", "text": "For DNS lookup", "is_correct": false },
+          { "id": "B", "text": "Used when no other route matches the destination", "is_correct": true },
+          { "id": "C", "text": "Used for ARP resolution", "is_correct": false },
+          { "id": "D", "text": "For broadcast traffic", "is_correct": false }
+        ]
+      },
+      {
+        "id": 26,
+        "text": "Subnet mask 255.255.255.192 (/26) provides how many usable hosts?",
+        "type": "single_choice",
+        "tags": ["subnetting", "math"],
+        "explanation": "Block size 64. 64 - 2 = 62 usable hosts.",
+        "options": [
+          { "id": "A", "text": "62", "is_correct": true },
+          { "id": "B", "text": "30", "is_correct": false },
+          { "id": "C", "text": "126", "is_correct": false },
+          { "id": "D", "text": "14", "is_correct": false }
+        ]
+      },
+      {
+        "id": 27,
+        "text": "192.168.10.0/26 — what is the broadcast address?",
+        "type": "single_choice",
+        "tags": ["subnetting", "math"],
+        "explanation": "Range is .0 to .63. Broadcast is .63.",
+        "options": [
+          { "id": "A", "text": "192.168.10.64", "is_correct": false },
+          { "id": "B", "text": "192.168.10.63", "is_correct": true },
+          { "id": "C", "text": "192.168.10.62", "is_correct": false },
+          { "id": "D", "text": "192.168.10.65", "is_correct": false }
+        ]
+      },
+      {
+        "id": 28,
+        "text": "Which class is IP 172.16.5.1?",
+        "type": "single_choice",
+        "tags": ["ipv4", "classes"],
+        "explanation": "Class B range is 128-191.",
+        "options": [
+          { "id": "A", "text": "Class A", "is_correct": false },
+          { "id": "B", "text": "Class B", "is_correct": true },
+          { "id": "C", "text": "Class C", "is_correct": false },
+          { "id": "D", "text": "Class D", "is_correct": false }
+        ]
+      },
+      {
+        "id": 29,
+        "text": "What is the CIDR notation for subnet mask 255.255.255.0?",
+        "type": "single_choice",
+        "tags": ["subnetting", "cidr"],
+        "options": [
+          { "id": "A", "text": "/24", "is_correct": true },
+          { "id": "B", "text": "/25", "is_correct": false },
+          { "id": "C", "text": "/26", "is_correct": false },
+          { "id": "D", "text": "/27", "is_correct": false }
+        ]
+      },
+      {
+        "id": 30,
+        "text": "Which command assigns an IP to a router interface?",
+        "type": "single_choice",
+        "tags": ["cli", "configuration"],
+        "options": [
+          { "id": "A", "text": "ip assign", "is_correct": false },
+          { "id": "B", "text": "set ip address", "is_correct": false },
+          { "id": "C", "text": "ip address 192.168.1.1 255.255.255.0", "is_correct": true },
+          { "id": "D", "text": "assign address", "is_correct": false }
+        ]
+      },
+      {
+        "id": 31,
+        "text": "IPv6 address length is:",
+        "type": "single_choice",
+        "tags": ["ipv6", "concepts"],
+        "options": [
+          { "id": "A", "text": "32 bits", "is_correct": false },
+          { "id": "B", "text": "64 bits", "is_correct": false },
+          { "id": "C", "text": "128 bits", "is_correct": true },
+          { "id": "D", "text": "256 bits", "is_correct": false }
+        ]
+      },
+      {
+        "id": 32,
+        "text": "Which IPv6 address is equivalent to IPv4 loopback 127.0.0.1?",
+        "type": "single_choice",
+        "tags": ["ipv6", "addressing"],
+        "options": [
+          { "id": "A", "text": "::1", "is_correct": true },
+          { "id": "B", "text": "::", "is_correct": false },
+          { "id": "C", "text": "FE80::1", "is_correct": false },
+          { "id": "D", "text": "FF02::1", "is_correct": false }
+        ]
+      },
+      {
+        "id": 33,
+        "text": "Which protocol is used by IPv6 for address resolution (replacing ARP)?",
+        "type": "single_choice",
+        "tags": ["ipv6", "protocols"],
+        "options": [
+          { "id": "A", "text": "ICMPv6", "is_correct": false },
+          { "id": "B", "text": "ARP", "is_correct": false },
+          { "id": "C", "text": "DHCPv6", "is_correct": false },
+          { "id": "D", "text": "ND (Neighbor Discovery)", "is_correct": true }
+        ]
+      },
+      {
+        "id": 34,
+        "text": "What is the scope of address FE80::1?",
+        "type": "single_choice",
+        "tags": ["ipv6", "addressing"],
+        "options": [
+          { "id": "A", "text": "Global", "is_correct": false },
+          { "id": "B", "text": "Unique local", "is_correct": false },
+          { "id": "C", "text": "Link-local", "is_correct": true },
+          { "id": "D", "text": "Anycast", "is_correct": false }
+        ]
+      },
+      {
+        "id": 35,
+        "text": "Which ICMPv6 message type is Neighbor Advertisement?",
+        "type": "single_choice",
+        "tags": ["ipv6", "icmp"],
+        "options": [
+          { "id": "A", "text": "133", "is_correct": false },
+          { "id": "B", "text": "134", "is_correct": false },
+          { "id": "C", "text": "135", "is_correct": false },
+          { "id": "D", "text": "136", "is_correct": true }
+        ]
+      },
+      {
+        "id": 36,
+        "text": "Which protocol ensures reliable delivery?",
+        "type": "single_choice",
+        "tags": ["layer-4", "protocols"],
+        "options": [
+          { "id": "A", "text": "UDP", "is_correct": false },
+          { "id": "B", "text": "TCP", "is_correct": true },
+          { "id": "C", "text": "ICMP", "is_correct": false },
+          { "id": "D", "text": "IP", "is_correct": false }
+        ]
+      },
+      {
+        "id": 37,
+        "text": "Port 80 is used by:",
+        "type": "single_choice",
+        "tags": ["ports", "protocols"],
+        "options": [
+          { "id": "A", "text": "FTP", "is_correct": false },
+          { "id": "B", "text": "SMTP", "is_correct": false },
+          { "id": "C", "text": "HTTP", "is_correct": true },
+          { "id": "D", "text": "DNS", "is_correct": false }
+        ]
+      },
+      {
+        "id": 38,
+        "text": "Which field in TCP header ensures ordering?",
+        "type": "single_choice",
+        "tags": ["tcp", "header"],
+        "options": [
+          { "id": "A", "text": "Sequence number", "is_correct": true },
+          { "id": "B", "text": "Acknowledgment number", "is_correct": false },
+          { "id": "C", "text": "Port number", "is_correct": false },
+          { "id": "D", "text": "Window size", "is_correct": false }
+        ]
+      },
+      {
+        "id": 39,
+        "text": "UDP is used for:",
+        "type": "single_choice",
+        "tags": ["udp", "concepts"],
+        "options": [
+          { "id": "A", "text": "File Transfer", "is_correct": false },
+          { "id": "B", "text": "Web browsing", "is_correct": false },
+          { "id": "C", "text": "Voice streaming (VoIP)", "is_correct": true },
+          { "id": "D", "text": "Email", "is_correct": false }
+        ]
+      },
+      {
+        "id": 40,
+        "text": "TCP three-way handshake sequence is:",
+        "type": "single_choice",
+        "tags": ["tcp", "handshake"],
+        "options": [
+          { "id": "A", "text": "SYN → SYN-ACK → ACK", "is_correct": true },
+          { "id": "B", "text": "ACK → SYN → SYN-ACK", "is_correct": false },
+          { "id": "C", "text": "SYN → ACK → SYN-ACK", "is_correct": false },
+          { "id": "D", "text": "FIN → ACK → FIN", "is_correct": false }
+        ]
+      },
+      {
+        "id": 41,
+        "text": "DNS uses which transport protocol?",
+        "type": "single_choice",
+        "tags": ["dns", "protocols"],
+        "options": [
+          { "id": "A", "text": "TCP", "is_correct": false },
+          { "id": "B", "text": "UDP", "is_correct": false },
+          { "id": "C", "text": "ICMP", "is_correct": false },
+          { "id": "D", "text": "Both TCP and UDP", "is_correct": true }
+        ]
+      },
+      {
+        "id": 42,
+        "text": "SMTP works on which port?",
+        "type": "single_choice",
+        "tags": ["ports", "email"],
+        "options": [
+          { "id": "A", "text": "21", "is_correct": false },
+          { "id": "B", "text": "25", "is_correct": true },
+          { "id": "C", "text": "80", "is_correct": false },
+          { "id": "D", "text": "110", "is_correct": false }
+        ]
+      },
+      {
+        "id": 43,
+        "text": "POP3 retrieves emails from:",
+        "type": "single_choice",
+        "tags": ["email", "protocols"],
+        "options": [
+          { "id": "A", "text": "Server to client", "is_correct": true },
+          { "id": "B", "text": "Client to server", "is_correct": false },
+          { "id": "C", "text": "Peer to peer", "is_correct": false },
+          { "id": "D", "text": "None of these", "is_correct": false }
+        ]
+      },
+      {
+        "id": 44,
+        "text": "FTP control connection uses which port?",
+        "type": "single_choice",
+        "tags": ["ports", "ftp"],
+        "options": [
+          { "id": "A", "text": "20", "is_correct": false },
+          { "id": "B", "text": "21", "is_correct": true },
+          { "id": "C", "text": "22", "is_correct": false },
+          { "id": "D", "text": "23", "is_correct": false }
+        ]
+      },
+      {
+        "id": 45,
+        "text": "HTTP status code 404 means:",
+        "type": "single_choice",
+        "tags": ["http", "web"],
+        "options": [
+          { "id": "A", "text": "OK", "is_correct": false },
+          { "id": "B", "text": "Forbidden", "is_correct": false },
+          { "id": "C", "text": "Not Found", "is_correct": true },
+          { "id": "D", "text": "Unauthorized", "is_correct": false }
+        ]
+      },
+      {
+        "id": 46,
+        "text": "Which protocol securely connects to network devices (replacing Telnet)?",
+        "type": "single_choice",
+        "tags": ["security", "protocols"],
+        "options": [
+          { "id": "A", "text": "Telnet", "is_correct": false },
+          { "id": "B", "text": "SSH", "is_correct": true },
+          { "id": "C", "text": "HTTP", "is_correct": false },
+          { "id": "D", "text": "FTP", "is_correct": false }
+        ]
+      },
+      {
+        "id": 47,
+        "text": "Which command encrypts all plaintext passwords on Cisco devices?",
+        "type": "single_choice",
+        "tags": ["cli", "security"],
+        "options": [
+          { "id": "A", "text": "enable secret", "is_correct": false },
+          { "id": "B", "text": "password encrypt", "is_correct": false },
+          { "id": "C", "text": "service password-encryption", "is_correct": true },
+          { "id": "D", "text": "encrypt all", "is_correct": false }
+        ]
+      },
+      {
+        "id": 48,
+        "text": "Which is a strong password example?",
+        "type": "single_choice",
+        "tags": ["security", "concepts"],
+        "options": [
+          { "id": "A", "text": "admin123", "is_correct": false },
+          { "id": "B", "text": "Password", "is_correct": false },
+          { "id": "C", "text": "@NetWork!23", "is_correct": true },
+          { "id": "D", "text": "12345", "is_correct": false }
+        ]
+      },
+      {
+        "id": 49,
+        "text": "Which message appears before login to warn users?",
+        "type": "single_choice",
+        "tags": ["cli", "security"],
+        "options": [
+          { "id": "A", "text": "MOTD banner (Message of the Day)", "is_correct": true },
+          { "id": "B", "text": "Welcome banner", "is_correct": false },
+          { "id": "C", "text": "Login message", "is_correct": false },
+          { "id": "D", "text": "Session banner", "is_correct": false }
+        ]
+      },
+      {
+        "id": 50,
+        "text": "Which feature prevents brute-force login attempts on Cisco devices?",
+        "type": "single_choice",
+        "tags": ["security", "cli"],
+        "options": [
+          { "id": "A", "text": "login lockout", "is_correct": false },
+          { "id": "B", "text": "password block", "is_correct": false },
+          { "id": "C", "text": "login block-for", "is_correct": true },
+          { "id": "D", "text": "ssh timeout", "is_correct": false }
+        ]
+      },
+      {
+        "id": 51,
+        "text": "A network administrator has configured SSH but remote access fails. Which additional configuration element is required to complete the SSH setup (generate keys)?",
+        "type": "single_choice",
+        "tags": ["cli", "ssh", "from-photo"],
+        "explanation": "SSH requires RSA keys to be generated for encryption to work.",
+        "options": [
+          { "id": "A", "text": "ip ssh enable", "is_correct": false },
+          { "id": "B", "text": "crypto key generate rsa", "is_correct": true },
+          { "id": "C", "text": "Assigning an IP address", "is_correct": false },
+          { "id": "D", "text": "Enabling SSH version 2", "is_correct": false }
+        ]
+      },
+      {
+        "id": 52,
+        "text": "A Layer-2 switch has IP 192.168.1.10/24 and Default Gateway 192.168.2.1. Which is true?",
+        "type": "single_choice",
+        "tags": ["switching", "routing", "from-photo"],
+        "explanation": "The Gateway (192.168.2.1) is in a different subnet than the Switch IP (192.168.1.10). The switch cannot reach the gateway to send traffic outside.",
+        "options": [
+          { "id": "A", "text": "The switch will not reach remote networks", "is_correct": true },
+          { "id": "B", "text": "The switch will ignore the gateway", "is_correct": false },
+          { "id": "C", "text": "The switch will NAT traffic", "is_correct": false },
+          { "id": "D", "text": "The switch will reach all networks", "is_correct": false }
+        ]
+      },
+      {
+        "id": 53,
+        "text": "An email warns that a limited-edition product is almost sold out and a special discount expires in one hour. Which two psychological tactics are being combined?",
+        "type": "single_choice",
+        "tags": ["security", "social-engineering", "from-photo"],
+        "options": [
+          { "id": "A", "text": "Scarcity and Urgency", "is_correct": true },
+          { "id": "B", "text": "Consensus and Quid Pro Quo", "is_correct": false },
+          { "id": "C", "text": "Familiarity and Trust", "is_correct": false },
+          { "id": "D", "text": "Authority and Intimidation", "is_correct": false }
+        ]
+      },
+      {
+        "id": 54,
+        "text": "A device sends data starting from Layer 7 to Layer 1. Which sequence shows the correct PDU names during encapsulation?",
+        "type": "single_choice",
+        "tags": ["osi", "encapsulation", "from-photo"],
+        "explanation": "L7=Data, L4=Segment, L3=Packet, L2=Frame, L1=Bits.",
+        "options": [
+          { "id": "A", "text": "Bits -> Packet -> Segment -> Frame", "is_correct": false },
+          { "id": "B", "text": "Segment -> Packet -> Frame -> Bits", "is_correct": false },
+          { "id": "C", "text": "Frame -> Packet -> Segment -> Bits", "is_correct": false },
+          { "id": "D", "text": "Packet -> Segment -> Frame -> Bits", "is_correct": true }
+        ]
+      },
+      {
+        "id": 55,
+        "text": "Which subnet below correctly fits AND avoids overlap? Block: 10.5.0.0/24. VLAN 20 needs 50 hosts.",
+        "type": "single_choice",
+        "tags": ["subnetting", "vlsm", "from-photo"],
+        "explanation": "50 hosts requires a /26 mask (64 IPs). 10.5.0.0/26 is the first block. 10.5.0.64/26 is the second block. /27 is too small (30 hosts).",
+        "options": [
+          { "id": "A", "text": "10.5.0.0/27", "is_correct": false },
+          { "id": "B", "text": "10.5.0.64/27", "is_correct": false },
+          { "id": "C", "text": "10.5.0.0/26", "is_correct": false },
+          { "id": "D", "text": "10.5.0.128/26", "is_correct": true }
+        ]
+      },
+      {
+        "id": 56,
+        "text": "Which option best explains the difference between a physical interface and a logical interface on a router?",
+        "type": "single_choice",
+        "tags": ["routing", "interfaces", "from-photo"],
+        "options": [
+          { "id": "A", "text": "Physical interfaces carry traffic over cables, while logical interfaces exist in software (VLANs, tunnels)", "is_correct": true },
+          { "id": "B", "text": "Logical interfaces are always faster", "is_correct": false },
+          { "id": "C", "text": "Physical interfaces support IPv4 only", "is_correct": false },
+          { "id": "D", "text": "Logical interfaces do not require IP addresses", "is_correct": false }
+        ]
+      },
+      {
+        "id": 57,
+        "text": "A disgruntled employee embeds malicious code into a company's payroll system that is set to delete files if their ID is removed. What type of malware is this?",
+        "type": "single_choice",
+        "tags": ["security", "malware", "from-photo"],
+        "options": [
+          { "id": "A", "text": "Ransomware", "is_correct": false },
+          { "id": "B", "text": "Logic Bomb", "is_correct": true },
+          { "id": "C", "text": "Worm", "is_correct": false },
+          { "id": "D", "text": "Spyware", "is_correct": false }
+        ]
+      },
+      {
+        "id": 58,
+        "text": "Which of the following cyber attacks does NOT replicate itself?",
+        "type": "single_choice",
+        "tags": ["security", "attacks", "from-photo"],
+        "explanation": "Viruses and Worms replicate. A Trojan Horse disguises itself but typically does not self-replicate.",
+        "options": [
+          { "id": "A", "text": "Melissa virus", "is_correct": false },
+          { "id": "B", "text": "Code Red worm", "is_correct": false },
+          { "id": "C", "text": "Mutating virus", "is_correct": false },
+          { "id": "D", "text": "Trojan Horse", "is_correct": true }
+        ]
+      },
+      {
+        "id": 59,
+        "text": "Which Session Layer feature allows two devices to resume communication from the last successful checkpoint after a failure?",
+        "type": "single_choice",
+        "tags": ["osi", "layer-5", "from-photo"],
+        "options": [
+          { "id": "A", "text": "Session establishment", "is_correct": false },
+          { "id": "B", "text": "Dialog synchronization", "is_correct": true },
+          { "id": "C", "text": "Flow control", "is_correct": false },
+          { "id": "D", "text": "Window scaling", "is_correct": false }
+        ]
+      },
+      {
+        "id": 60,
+        "text": "Which type of translation is commonly performed at the Presentation Layer?",
+        "type": "single_choice",
+        "tags": ["osi", "layer-6", "from-photo"],
+        "options": [
+          { "id": "A", "text": "ASCII <-> Unicode", "is_correct": true },
+          { "id": "B", "text": "IP <-> MAC", "is_correct": false },
+          { "id": "C", "text": "HTTP <-> HTTPS", "is_correct": false },
+          { "id": "D", "text": "UDP <-> TCP", "is_correct": false }
+        ]
+      },
+      {
+        "id": 61,
+        "text": "Which protocol belongs to the Data Link Layer?",
+        "type": "single_choice",
+        "tags": ["osi", "layer-2", "from-photo"],
+        "options": [
+          { "id": "A", "text": "ARP", "is_correct": true },
+          { "id": "B", "text": "TCP", "is_correct": false },
+          { "id": "C", "text": "ICMP", "is_correct": false },
+          { "id": "D", "text": "HTTP", "is_correct": false }
+        ]
+      },
+      {
+        "id": 62,
+        "text": "Which routing protocol uses AS (Autonomous System) numbers?",
+        "type": "single_choice",
+        "tags": ["routing", "protocols", "from-photo"],
+        "explanation": "BGP and EIGRP use AS numbers. RIP and OSPF do not (OSPF uses Process ID). In the exam context, BGP is the primary AS-based protocol.",
+        "options": [
+          { "id": "A", "text": "RIP", "is_correct": false },
+          { "id": "B", "text": "OSPF", "is_correct": false },
+          { "id": "C", "text": "BGP", "is_correct": true },
+          { "id": "D", "text": "EIGRP", "is_correct": false }
+        ]
+      },
+      {
+        "id": 63,
+        "text": "Default OSPF Hello interval on Ethernet (Broadcast networks):",
+        "type": "single_choice",
+        "tags": ["routing", "ospf", "from-photo"],
+        "options": [
+          { "id": "A", "text": "5 s", "is_correct": false },
+          { "id": "B", "text": "10 s", "is_correct": true },
+          { "id": "C", "text": "20 s", "is_correct": false },
+          { "id": "D", "text": "30 s", "is_correct": false }
+        ]
+      },
+      {
+        "id": 64,
+        "text": "Which encoding method is commonly used on Ethernet physical media?",
+        "type": "single_choice",
+        "tags": ["layer-1", "encoding", "from-photo"],
+        "options": [
+          { "id": "A", "text": "Manchester encoding", "is_correct": true },
+          { "id": "B", "text": "Base64 encoding", "is_correct": false },
+          { "id": "C", "text": "ASCII encoding", "is_correct": false },
+          { "id": "D", "text": "Diffie-Hellman", "is_correct": false }
+        ]
+      },
+      {
+        "id": 65,
+        "text": "In SLAAC, which device provides the IPv6 prefix to hosts?",
+        "type": "single_choice",
+        "tags": ["ipv6", "slaac", "from-photo"],
+        "options": [
+          { "id": "A", "text": "DHCPv6 Server", "is_correct": false },
+          { "id": "B", "text": "DNS Server", "is_correct": false },
+          { "id": "C", "text": "IPv6 Router (Router Advertisement)", "is_correct": true },
+          { "id": "D", "text": "ARP Server", "is_correct": false }
+        ]
+      }
+    ]
+  }

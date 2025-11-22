@@ -1,0 +1,274 @@
+{
+    "meta": {
+      "topic": "IPv6 Networking Fundamentals",
+      "source": "SE-2301 Quiz (Corrected)",
+      "version": "1.1",
+      "created_at": "2023-10-27",
+      "total_questions": 20
+    },
+    "questions": [
+      {
+        "id": 1,
+        "text": "Which IPv6 address is valid?",
+        "type": "single_choice",
+        "tags": ["addressing", "syntax"],
+        "options": [
+          { "id": "A", "text": "2031:0:130F::9C0:876A:130B", "is_correct": true },
+          { "id": "B", "text": "2001:0DB8:0000:130F:0000:0000:08GC:140B", "is_correct": false },
+          { "id": "C", "text": "2001:0DB8:0:130H::87C:140B", "is_correct": false },
+          { "id": "D", "text": "2031::130F::9C0:876A:130B", "is_correct": false }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Which IPv6 address is the equivalent of the IPv4 interface loopback address 127.0.0.1?",
+        "type": "single_choice",
+        "tags": ["addressing", "special-addresses"],
+        "options": [
+          { "id": "A", "text": "::1", "is_correct": true },
+          { "id": "B", "text": "::", "is_correct": false },
+          { "id": "C", "text": "2000::/3", "is_correct": false },
+          { "id": "D", "text": "0::/10", "is_correct": false }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "How many bits are contained in each field (hextet) of an IPv6 address?",
+        "type": "single_choice",
+        "tags": ["structure"],
+        "options": [
+          { "id": "A", "text": "24", "is_correct": false },
+          { "id": "B", "text": "4", "is_correct": false },
+          { "id": "C", "text": "8", "is_correct": false },
+          { "id": "D", "text": "16", "is_correct": true }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "Which IPv6 address is the all-router multicast group?",
+        "type": "single_choice",
+        "tags": ["multicast", "special-addresses"],
+        "explanation": "FF02::1 is all-nodes. FF02::2 is all-routers.",
+        "options": [
+          { "id": "A", "text": "FF02::1", "is_correct": false },
+          { "id": "B", "text": "FF02::2", "is_correct": true },
+          { "id": "C", "text": "FF02::3", "is_correct": false },
+          { "id": "D", "text": "FF02::4", "is_correct": false }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "Which three are characteristics of an IPv6 anycast address? (Choose three)",
+        "type": "multiple_choice",
+        "tags": ["anycast", "concepts"],
+        "options": [
+          { "id": "A", "text": "one-to-many communication model", "is_correct": false },
+          { "id": "B", "text": "one-to-nearest communication model", "is_correct": true },
+          { "id": "C", "text": "any-to-many communication model", "is_correct": false },
+          { "id": "D", "text": "a unique IPv6 address for each device in the group", "is_correct": false },
+          { "id": "E", "text": "the same address for multiple devices in the group", "is_correct": true },
+          { "id": "F", "text": "delivery of packets to the group interface that is closest to the sending device", "is_correct": true }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "Which two are features of IPv6? (Choose two)",
+        "type": "multiple_choice",
+        "tags": ["features"],
+        "options": [
+          { "id": "A", "text": "multicast", "is_correct": true },
+          { "id": "B", "text": "broadcast", "is_correct": false },
+          { "id": "C", "text": "allcast", "is_correct": false },
+          { "id": "D", "text": "podcast", "is_correct": false },
+          { "id": "E", "text": "anycast", "is_correct": true }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "Which three approaches can be used while migrating from an IPv4 addressing scheme to an IPv6 scheme? (Choose three)",
+        "type": "multiple_choice",
+        "tags": ["migration"],
+        "options": [
+          { "id": "A", "text": "static mapping of IPv4 address to IPv6 addresses", "is_correct": false },
+          { "id": "B", "text": "configuring IPv4 tunnels between IPv6 islands", "is_correct": true },
+          { "id": "C", "text": "use DHCPv6 to map IPv4 addresses to IPv6 addresses", "is_correct": false },
+          { "id": "D", "text": "use proxying and translation (NAT-PT) to translate IPv6 packets into IPv4 packets", "is_correct": true },
+          { "id": "E", "text": "configure IPv6 directly", "is_correct": false },
+          { "id": "F", "text": "enable dual-stack routing", "is_correct": true }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "Which of these represents an IPv6 link-local address?",
+        "type": "single_choice",
+        "tags": ["addressing", "link-local"],
+        "options": [
+          { "id": "A", "text": "FE08::280e:611:a:f14f:3d69", "is_correct": false },
+          { "id": "B", "text": "FE81::280f:512b:e14f:3d69", "is_correct": false },
+          { "id": "C", "text": "FE80::380e:611a:e14f:3d69", "is_correct": true },
+          { "id": "D", "text": "FEFE:0345:5f1b::e14d:3d69", "is_correct": false }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "Which command enables IPv6 forwarding on a cisco router?",
+        "type": "single_choice",
+        "tags": ["cli", "configuration"],
+        "options": [
+          { "id": "A", "text": "IPv6 host", "is_correct": false },
+          { "id": "B", "text": "IPv6 unicast-routing", "is_correct": true },
+          { "id": "C", "text": "IPv6 local", "is_correct": false },
+          { "id": "D", "text": "IPv6 neighbor", "is_correct": false }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "Which two statements describe characteristics of IPv6 unicast addressing? (Choose two)",
+        "type": "multiple_choice",
+        "tags": ["unicast", "addressing"],
+        "options": [
+          { "id": "A", "text": "Global addresses start with 2000::/3", "is_correct": true },
+          { "id": "B", "text": "Link-local addresses start with FE00:/12", "is_correct": false },
+          { "id": "C", "text": "Link-local addresses start with FF00::/10", "is_correct": false },
+          { "id": "D", "text": "There is only one loopback address and it is ::1", "is_correct": true },
+          { "id": "E", "text": "If a global address is assigned to an interface, then that is the only allowable address for the Interface", "is_correct": false }
+        ]
+      },
+      {
+        "id": 11,
+        "text": "What are three features of the IPv6 protocol? (Choose three)",
+        "type": "multiple_choice",
+        "tags": ["features"],
+        "options": [
+          { "id": "A", "text": "optional IPsec", "is_correct": false },
+          { "id": "B", "text": "autoconfiguration", "is_correct": true },
+          { "id": "C", "text": "no broadcasts", "is_correct": true },
+          { "id": "D", "text": "complicated header", "is_correct": false },
+          { "id": "E", "text": "plug-and-play", "is_correct": true },
+          { "id": "F", "text": "checksums", "is_correct": false }
+        ]
+      },
+      {
+        "id": 12,
+        "text": "Which option is a valid IPv6 address?",
+        "type": "single_choice",
+        "tags": ["addressing", "syntax"],
+        "options": [
+          { "id": "A", "text": "2001:0000:130F::099a::12a", "is_correct": false },
+          { "id": "B", "text": "2002:7654:A1AD:61:81AF:CCC1", "is_correct": false },
+          { "id": "C", "text": "FEC0:ABCD:WXYZ:0067::2A4", "is_correct": false },
+          { "id": "D", "text": "2004:1:25A4:886F::1", "is_correct": true }
+        ]
+      },
+      {
+        "id": 13,
+        "text": "What is the alternative notation for the IPv6 address B514:82C3:0000:0000:0029:EC7A:0000:EC72?",
+        "type": "single_choice",
+        "tags": ["addressing", "compression"],
+        "options": [
+          { "id": "A", "text": "B514:82C3:0029::EC7A:0000:EC72", "is_correct": false },
+          { "id": "B", "text": "B514:82C3:0029:EC7A:EC72", "is_correct": false },
+          { "id": "C", "text": "B514:82C3::0029:EC7A:0:EC72", "is_correct": true },
+          { "id": "D", "text": "B514:82C3::0029:EC7A:EC72", "is_correct": false }
+        ]
+      },
+      {
+        "id": 14,
+        "text": "Which command can you use to manually assign a static IPv6 address to a router interface?",
+        "type": "single_choice",
+        "tags": ["cli", "configuration"],
+        "options": [
+          { "id": "A", "text": "ipv6 address PREFIX_1::1/64", "is_correct": false },
+          { "id": "B", "text": "ipv6 autoconfig 2001:db8:2222:7272::72/64", "is_correct": false },
+          { "id": "C", "text": "ipv6 autoconfig", "is_correct": false },
+          { "id": "D", "text": "ipv6 address 2001:db8:2222:7272::72/64", "is_correct": true }
+        ]
+      },
+      {
+        "id": 15,
+        "text": "Which statements about IPv6 Link-Local Addresses (LLAs) are true? (Select all that apply)",
+        "type": "multiple_choice",
+        "tags": ["link-local", "addressing"],
+        "options": [
+          { "id": "A", "text": "Range is fe80::/10", "is_correct": true },
+          { "id": "B", "text": "They are globally routable", "is_correct": false },
+          { "id": "C", "text": "They exist on every IPv6 interface", "is_correct": true },
+          { "id": "D", "text": "They can be used as default gateways", "is_correct": true },
+          { "id": "E", "text": "They are used for communication within the same link", "is_correct": true },
+          { "id": "F", "text": "They replace Global Unicast Addresses", "is_correct": false }
+        ]
+      },
+      {
+        "id": 16,
+        "text": "Which dynamic IPv6 address assignment methods exist? (Select all that apply)",
+        "type": "multiple_choice",
+        "tags": ["dynamic-assignment", "dhcp"],
+        "explanation": "SLAAC, Stateless DHCPv6, and Stateful DHCPv6 are the three main dynamic methods.",
+        "options": [
+          { "id": "A", "text": "SLAAC", "is_correct": true },
+          { "id": "B", "text": "Stateless DHCPv6", "is_correct": true },
+          { "id": "C", "text": "Stateful DHCPv6", "is_correct": true },
+          { "id": "D", "text": "Manual Configuration", "is_correct": false },
+          { "id": "E", "text": "ICMPv4 Assisted", "is_correct": false },
+          { "id": "F", "text": "EUI-64 Generation", "is_correct": false }
+        ]
+      },
+      {
+        "id": 17,
+        "text": "Which command assigns a Global Unicast Address (GUA) to a Cisco interface?",
+        "type": "single_choice",
+        "tags": ["cli", "configuration"],
+        "options": [
+          { "id": "A", "text": "ip address 2001:db8:acad:1::1/64", "is_correct": false },
+          { "id": "B", "text": "ipv6 address 2001:db8:acad:1::1/64", "is_correct": true },
+          { "id": "C", "text": "ipv6 enable", "is_correct": false },
+          { "id": "D", "text": "ipv6 unicast-routing", "is_correct": false },
+          { "id": "E", "text": "ip route 2001:db8:acad::/64", "is_correct": false },
+          { "id": "F", "text": "ipv6 static 2001:db8:acad::1/64", "is_correct": false }
+        ]
+      },
+      {
+        "id": 18,
+        "text": "Which command configures a manual Link-Local Address on an interface?",
+        "type": "single_choice",
+        "tags": ["cli", "link-local"],
+        "options": [
+          { "id": "A", "text": "ipv6 address fe80::1 link-local", "is_correct": true },
+          { "id": "B", "text": "ip address fe80::1 link-local", "is_correct": false },
+          { "id": "C", "text": "ipv6 enable link-local", "is_correct": false },
+          { "id": "D", "text": "ipv6 address fe80::1:1 link-local", "is_correct": false },
+          { "id": "E", "text": "ipv6 static fe80::1 link-local", "is_correct": false },
+          { "id": "F", "text": "ipv6 set fe80::1", "is_correct": false }
+        ]
+      },
+      {
+        "id": 19,
+        "text": "Which commands verify IPv6 interface status and address configuration? (Select all that apply)",
+        "type": "multiple_choice",
+        "tags": ["cli", "verification"],
+        "explanation": "'show ipv6 interface brief' is the best summary. 'show interface...' also shows the IPv6 address and line protocol status.",
+        "options": [
+          { "id": "A", "text": "show ipv6 interface brief", "is_correct": true },
+          { "id": "B", "text": "show ipv6 route", "is_correct": false },
+          { "id": "C", "text": "show interface gigabitEthernet 0/0/0", "is_correct": true },
+          { "id": "D", "text": "show running-config interface", "is_correct": false },
+          { "id": "E", "text": "ping ::1", "is_correct": false },
+          { "id": "F", "text": "show arp", "is_correct": false }
+        ]
+      },
+      {
+        "id": 20,
+        "text": "Which command globally enables IPv6 routing on a Cisco router?",
+        "type": "single_choice",
+        "tags": ["cli", "routing"],
+        "options": [
+          { "id": "A", "text": "ipv6 unicast-routing", "is_correct": true },
+          { "id": "B", "text": "enable ipv6 routing", "is_correct": false },
+          { "id": "C", "text": "ipv6 global enable", "is_correct": false },
+          { "id": "D", "text": "ip routing", "is_correct": false },
+          { "id": "E", "text": "ipv6 router enable", "is_correct": false },
+          { "id": "F", "text": "configure ipv6 routing", "is_correct": false }
+        ]
+      }
+    ]
+  }

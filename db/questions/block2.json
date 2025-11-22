@@ -1,0 +1,880 @@
+{
+    "meta": {
+      "topic": "CCNA: Full Block 2 (Layers 1-7 & Security)",
+      "source": "Lecture Notes 3-10",
+      "version": "3.0",
+      "created_at": "2023-10-27",
+      "total_questions": 72
+    },
+    "questions": [
+      {
+        "id": 1,
+        "text": "What is the main purpose of the Physical Layer?",
+        "type": "single_choice",
+        "tags": ["layer-1", "concepts"],
+        "options": [
+          { "id": "A", "text": "To transport bits across network media", "is_correct": true },
+          { "id": "B", "text": "To determine the best path for packets", "is_correct": false },
+          { "id": "C", "text": "To ensure reliable data delivery", "is_correct": false },
+          { "id": "D", "text": "To format data for the application layer", "is_correct": false }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "What device connects a host to the network?",
+        "type": "single_choice",
+        "tags": ["layer-1", "hardware"],
+        "options": [
+          { "id": "A", "text": "Router", "is_correct": false },
+          { "id": "B", "text": "Network Interface Card (NIC)", "is_correct": true },
+          { "id": "C", "text": "Switch", "is_correct": false },
+          { "id": "D", "text": "Repeater", "is_correct": false }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "What is the term for the weakening of a signal over distance?",
+        "type": "single_choice",
+        "tags": ["layer-1", "physics"],
+        "options": [
+          { "id": "A", "text": "Latency", "is_correct": false },
+          { "id": "B", "text": "Throughput", "is_correct": false },
+          { "id": "C", "text": "Attenuation", "is_correct": true },
+          { "id": "D", "text": "Crosstalk", "is_correct": false }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "What is the name for unwanted noise from electrical sources?",
+        "type": "single_choice",
+        "tags": ["layer-1", "interference"],
+        "options": [
+          { "id": "A", "text": "Electromagnetic Interference (EMI)", "is_correct": true },
+          { "id": "B", "text": "Signal-to-Noise Ratio (SNR)", "is_correct": false },
+          { "id": "C", "text": "Dispersion", "is_correct": false },
+          { "id": "D", "text": "Modulation", "is_correct": false }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "What is the main advantage of STP (Shielded Twisted Pair) over UTP cable?",
+        "type": "single_choice",
+        "tags": ["layer-1", "cabling"],
+        "options": [
+          { "id": "A", "text": "Lower cost", "is_correct": false },
+          { "id": "B", "text": "Easier installation", "is_correct": false },
+          { "id": "C", "text": "Better noise protection (shielding)", "is_correct": true },
+          { "id": "D", "text": "Longer maximum distance", "is_correct": false }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "What is the main advantage of Fiber-Optic cable over Copper?",
+        "type": "single_choice",
+        "tags": ["layer-1", "cabling"],
+        "options": [
+          { "id": "A", "text": "It is cheaper to manufacture", "is_correct": false },
+          { "id": "B", "text": "It can carry electrical power (PoE)", "is_correct": false },
+          { "id": "C", "text": "Immunity to EMI/RFI and higher bandwidth", "is_correct": true },
+          { "id": "D", "text": "It uses RJ-45 connectors", "is_correct": false }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "What are the two types of fiber-optic cable?",
+        "type": "multiple_choice",
+        "tags": ["layer-1", "cabling"],
+        "options": [
+          { "id": "A", "text": "Single-mode", "is_correct": true },
+          { "id": "B", "text": "Multimode", "is_correct": true },
+          { "id": "C", "text": "Coaxial", "is_correct": false },
+          { "id": "D", "text": "Twisted Pair", "is_correct": false },
+          { "id": "E", "text": "Full-duplex", "is_correct": false }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "What is the IEEE standard for Wireless LAN?",
+        "type": "single_choice",
+        "tags": ["layer-1", "standards"],
+        "options": [
+          { "id": "A", "text": "IEEE 802.3", "is_correct": false },
+          { "id": "B", "text": "IEEE 802.11", "is_correct": true },
+          { "id": "C", "text": "IEEE 802.15", "is_correct": false },
+          { "id": "D", "text": "IEEE 802.1Q", "is_correct": false }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "What is the name of the PDU at the Data Link Layer?",
+        "type": "single_choice",
+        "tags": ["layer-2", "terminology"],
+        "options": [
+          { "id": "A", "text": "Packet", "is_correct": false },
+          { "id": "B", "text": "Segment", "is_correct": false },
+          { "id": "C", "text": "Frame", "is_correct": true },
+          { "id": "D", "text": "Bit", "is_correct": false }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "What are the two sublayers of the Data Link layer?",
+        "type": "multiple_choice",
+        "tags": ["layer-2", "structure"],
+        "options": [
+          { "id": "A", "text": "LLC (Logical Link Control)", "is_correct": true },
+          { "id": "B", "text": "MAC (Media Access Control)", "is_correct": true },
+          { "id": "C", "text": "IP (Internet Protocol)", "is_correct": false },
+          { "id": "D", "text": "TCP (Transmission Control Protocol)", "is_correct": false }
+        ]
+      },
+      {
+        "id": 11,
+        "text": "Which sublayer is responsible for data encapsulation?",
+        "type": "single_choice",
+        "tags": ["layer-2", "structure"],
+        "options": [
+          { "id": "A", "text": "LLC", "is_correct": false },
+          { "id": "B", "text": "MAC (Media Access Control)", "is_correct": true },
+          { "id": "C", "text": "Physical", "is_correct": false },
+          { "id": "D", "text": "Network", "is_correct": false }
+        ]
+      },
+      {
+        "id": 12,
+        "text": "What is the difference between physical and logical topology?",
+        "type": "single_choice",
+        "tags": ["layer-2", "topology"],
+        "options": [
+          { "id": "A", "text": "Physical is cable layout; Logical is data path", "is_correct": true },
+          { "id": "B", "text": "Physical is IP addressing; Logical is MAC addressing", "is_correct": false },
+          { "id": "C", "text": "Physical is wireless; Logical is wired", "is_correct": false },
+          { "id": "D", "text": "There is no difference", "is_correct": false }
+        ]
+      },
+      {
+        "id": 13,
+        "text": "What communication mode allows sending and receiving simultaneously?",
+        "type": "single_choice",
+        "tags": ["layer-2", "transmission"],
+        "options": [
+          { "id": "A", "text": "Half-duplex", "is_correct": false },
+          { "id": "B", "text": "Simplex", "is_correct": false },
+          { "id": "C", "text": "Full-duplex", "is_correct": true },
+          { "id": "D", "text": "Multiplex", "is_correct": false }
+        ]
+      },
+      {
+        "id": 14,
+        "text": "What access method is used in legacy Ethernet (hubs)?",
+        "type": "single_choice",
+        "tags": ["layer-2", "ethernet"],
+        "options": [
+          { "id": "A", "text": "CSMA/CA (Collision Avoidance)", "is_correct": false },
+          { "id": "B", "text": "Token Passing", "is_correct": false },
+          { "id": "C", "text": "CSMA/CD (Collision Detection)", "is_correct": true },
+          { "id": "D", "text": "TDMA", "is_correct": false }
+        ]
+      },
+      {
+        "id": 15,
+        "text": "What access method is used in Wireless LANs?",
+        "type": "single_choice",
+        "tags": ["layer-2", "wireless"],
+        "options": [
+          { "id": "A", "text": "CSMA/CD", "is_correct": false },
+          { "id": "B", "text": "CSMA/CA (Collision Avoidance)", "is_correct": true },
+          { "id": "C", "text": "Polling", "is_correct": false },
+          { "id": "D", "text": "Demand Priority", "is_correct": false }
+        ]
+      },
+      {
+        "id": 16,
+        "text": "What field in a frame is used for error detection?",
+        "type": "single_choice",
+        "tags": ["layer-2", "frame-structure"],
+        "options": [
+          { "id": "A", "text": "TTL", "is_correct": false },
+          { "id": "B", "text": "FCS (Frame Check Sequence)", "is_correct": true },
+          { "id": "C", "text": "Sequence Number", "is_correct": false },
+          { "id": "D", "text": "Preamble", "is_correct": false }
+        ]
+      },
+      {
+        "id": 17,
+        "text": "How many bits are in a MAC address?",
+        "type": "single_choice",
+        "tags": ["layer-2", "addressing"],
+        "options": [
+          { "id": "A", "text": "32 bits", "is_correct": false },
+          { "id": "B", "text": "48 bits", "is_correct": true },
+          { "id": "C", "text": "64 bits", "is_correct": false },
+          { "id": "D", "text": "128 bits", "is_correct": false }
+        ]
+      },
+      {
+        "id": 18,
+        "text": "What is the destination MAC address for a broadcast frame?",
+        "type": "single_choice",
+        "tags": ["layer-2", "addressing"],
+        "options": [
+          { "id": "A", "text": "00-00-00-00-00-00", "is_correct": false },
+          { "id": "B", "text": "AA-BB-CC-DD-EE-FF", "is_correct": false },
+          { "id": "C", "text": "FF-FF-FF-FF-FF-FF", "is_correct": true },
+          { "id": "D", "text": "11-11-11-11-11-11", "is_correct": false }
+        ]
+      },
+      {
+        "id": 19,
+        "text": "How does a switch build its MAC address table?",
+        "type": "single_choice",
+        "tags": ["layer-2", "switching"],
+        "options": [
+          { "id": "A", "text": "By examining the destination MAC address of incoming frames", "is_correct": false },
+          { "id": "B", "text": "By examining the source MAC address of incoming frames", "is_correct": true },
+          { "id": "C", "text": "By using the ARP protocol", "is_correct": false },
+          { "id": "D", "text": "It is manually configured by the administrator", "is_correct": false }
+        ]
+      },
+      {
+        "id": 20,
+        "text": "What does a switch do if the destination MAC is unknown?",
+        "type": "single_choice",
+        "tags": ["layer-2", "switching"],
+        "options": [
+          { "id": "A", "text": "Drops the frame", "is_correct": false },
+          { "id": "B", "text": "Sends it back to the source", "is_correct": false },
+          { "id": "C", "text": "Floods the frame to all ports except the source", "is_correct": true },
+          { "id": "D", "text": "Sends it to the default gateway", "is_correct": false }
+        ]
+      },
+      {
+        "id": 21,
+        "text": "What switching method checks for errors (FCS) before forwarding?",
+        "type": "single_choice",
+        "tags": ["layer-2", "switching"],
+        "options": [
+          { "id": "A", "text": "Cut-through", "is_correct": false },
+          { "id": "B", "text": "Store-and-forward", "is_correct": true },
+          { "id": "C", "text": "Fragment-free", "is_correct": false },
+          { "id": "D", "text": "Fast-forward", "is_correct": false }
+        ]
+      },
+      {
+        "id": 22,
+        "text": "What is the main advantage of cut-through switching?",
+        "type": "single_choice",
+        "tags": ["layer-2", "switching"],
+        "options": [
+          { "id": "A", "text": "Higher reliability", "is_correct": false },
+          { "id": "B", "text": "Error checking", "is_correct": false },
+          { "id": "C", "text": "Low latency", "is_correct": true },
+          { "id": "D", "text": "Better buffering", "is_correct": false }
+        ]
+      },
+      {
+        "id": 23,
+        "text": "What is the name of the PDU at the Network Layer?",
+        "type": "single_choice",
+        "tags": ["layer-3", "terminology"],
+        "options": [
+          { "id": "A", "text": "Frame", "is_correct": false },
+          { "id": "B", "text": "Packet", "is_correct": true },
+          { "id": "C", "text": "Segment", "is_correct": false },
+          { "id": "D", "text": "Datagram", "is_correct": false }
+        ]
+      },
+      {
+        "id": 24,
+        "text": "What are the three characteristics of the IP protocol?",
+        "type": "multiple_choice",
+        "tags": ["layer-3", "ip-concepts"],
+        "options": [
+          { "id": "A", "text": "Connectionless", "is_correct": true },
+          { "id": "B", "text": "Best Effort", "is_correct": true },
+          { "id": "C", "text": "Media Independent", "is_correct": true },
+          { "id": "D", "text": "Reliable", "is_correct": false },
+          { "id": "E", "text": "Connection-Oriented", "is_correct": false }
+        ]
+      },
+      {
+        "id": 25,
+        "text": "What field in an IPv4 header prevents packets from looping forever?",
+        "type": "single_choice",
+        "tags": ["layer-3", "header"],
+        "options": [
+          { "id": "A", "text": "Sequence Number", "is_correct": false },
+          { "id": "B", "text": "TTL (Time-to-Live)", "is_correct": true },
+          { "id": "C", "text": "Flow Label", "is_correct": false },
+          { "id": "D", "text": "Window Size", "is_correct": false }
+        ]
+      },
+      {
+        "id": 26,
+        "text": "What is the role of a Default Gateway?",
+        "type": "single_choice",
+        "tags": ["layer-3", "routing"],
+        "options": [
+          { "id": "A", "text": "To assign IP addresses to hosts", "is_correct": false },
+          { "id": "B", "text": "To forward traffic to remote networks", "is_correct": true },
+          { "id": "C", "text": "To resolve domain names", "is_correct": false },
+          { "id": "D", "text": "To switch frames within a LAN", "is_correct": false }
+        ]
+      },
+      {
+        "id": 27,
+        "text": "What are the three types of routes in a routing table?",
+        "type": "multiple_choice",
+        "tags": ["layer-3", "routing"],
+        "options": [
+          { "id": "A", "text": "Directly connected", "is_correct": true },
+          { "id": "B", "text": "Remote", "is_correct": true },
+          { "id": "C", "text": "Default", "is_correct": true },
+          { "id": "D", "text": "Localhost", "is_correct": false },
+          { "id": "E", "text": "Broadcast", "is_correct": false }
+        ]
+      },
+      {
+        "id": 28,
+        "text": "What is the difference between static and dynamic routing?",
+        "type": "single_choice",
+        "tags": ["layer-3", "routing"],
+        "options": [
+          { "id": "A", "text": "Static is automatic; Dynamic is manual", "is_correct": false },
+          { "id": "B", "text": "Static is manual; Dynamic is automatic", "is_correct": true },
+          { "id": "C", "text": "Static is for IPv4; Dynamic is for IPv6", "is_correct": false },
+          { "id": "D", "text": "Static is less secure than Dynamic", "is_correct": false }
+        ]
+      },
+      {
+        "id": 29,
+        "text": "What is the purpose of the ARP protocol?",
+        "type": "single_choice",
+        "tags": ["layer-3", "protocols"],
+        "options": [
+          { "id": "A", "text": "To map a MAC address to an IPv4 address", "is_correct": false },
+          { "id": "B", "text": "To map an IPv4 address to a MAC address", "is_correct": true },
+          { "id": "C", "text": "To find the default gateway", "is_correct": false },
+          { "id": "D", "text": "To assign an IP address automatically", "is_correct": false }
+        ]
+      },
+      {
+        "id": 30,
+        "text": "How many bits are in an IPv4 address?",
+        "type": "single_choice",
+        "tags": ["ipv4", "addressing"],
+        "options": [
+          { "id": "A", "text": "32 bits", "is_correct": true },
+          { "id": "B", "text": "48 bits", "is_correct": false },
+          { "id": "C", "text": "64 bits", "is_correct": false },
+          { "id": "D", "text": "128 bits", "is_correct": false }
+        ]
+      },
+      {
+        "id": 31,
+        "text": "What are the two parts of an IPv4 address?",
+        "type": "multiple_choice",
+        "tags": ["ipv4", "structure"],
+        "options": [
+          { "id": "A", "text": "Network portion", "is_correct": true },
+          { "id": "B", "text": "Host portion", "is_correct": true },
+          { "id": "C", "text": "MAC portion", "is_correct": false },
+          { "id": "D", "text": "Zone portion", "is_correct": false }
+        ]
+      },
+      {
+        "id": 32,
+        "text": "What is used to determine the network portion of an IP?",
+        "type": "single_choice",
+        "tags": ["ipv4", "subnetting"],
+        "options": [
+          { "id": "A", "text": "Default Gateway", "is_correct": false },
+          { "id": "B", "text": "Subnet mask", "is_correct": true },
+          { "id": "C", "text": "DNS Server", "is_correct": false },
+          { "id": "D", "text": "MAC Address", "is_correct": false }
+        ]
+      },
+      {
+        "id": 33,
+        "text": "What logical operation is used to find the network address?",
+        "type": "single_choice",
+        "tags": ["ipv4", "logic"],
+        "options": [
+          { "id": "A", "text": "Logical OR", "is_correct": false },
+          { "id": "B", "text": "Logical AND", "is_correct": true },
+          { "id": "C", "text": "Logical XOR", "is_correct": false },
+          { "id": "D", "text": "Logical NAND", "is_correct": false }
+        ]
+      },
+      {
+        "id": 34,
+        "text": "What are the three types of IPv4 transmission?",
+        "type": "multiple_choice",
+        "tags": ["ipv4", "transmission"],
+        "options": [
+          { "id": "A", "text": "Unicast", "is_correct": true },
+          { "id": "B", "text": "Broadcast", "is_correct": true },
+          { "id": "C", "text": "Multicast", "is_correct": true },
+          { "id": "D", "text": "Anycast", "is_correct": false },
+          { "id": "E", "text": "Omnicast", "is_correct": false }
+        ]
+      },
+      {
+        "id": 35,
+        "text": "What is the difference between public and private IPs?",
+        "type": "single_choice",
+        "tags": ["ipv4", "addressing"],
+        "options": [
+          { "id": "A", "text": "Public is free; Private is paid", "is_correct": false },
+          { "id": "B", "text": "Public is internet-routable; Private is not", "is_correct": true },
+          { "id": "C", "text": "Public is for servers; Private is for routers", "is_correct": false },
+          { "id": "D", "text": "Public uses IPv6; Private uses IPv4", "is_correct": false }
+        ]
+      },
+      {
+        "id": 36,
+        "text": "What technology translates private IPs to public IPs?",
+        "type": "single_choice",
+        "tags": ["ipv4", "nat"],
+        "options": [
+          { "id": "A", "text": "DHCP", "is_correct": false },
+          { "id": "B", "text": "DNS", "is_correct": false },
+          { "id": "C", "text": "NAT (Network Address Translation)", "is_correct": true },
+          { "id": "D", "text": "VPN", "is_correct": false }
+        ]
+      },
+      {
+        "id": 37,
+        "text": "What is the 127.0.0.1 address used for?",
+        "type": "single_choice",
+        "tags": ["ipv4", "special-addresses"],
+        "options": [
+          { "id": "A", "text": "Default Gateway", "is_correct": false },
+          { "id": "B", "text": "Broadcast", "is_correct": false },
+          { "id": "C", "text": "Loopback testing", "is_correct": true },
+          { "id": "D", "text": "Multicast", "is_correct": false }
+        ]
+      },
+      {
+        "id": 38,
+        "text": "What is the process of dividing a large network into smaller ones?",
+        "type": "single_choice",
+        "tags": ["ipv4", "subnetting"],
+        "options": [
+          { "id": "A", "text": "Supernetting", "is_correct": false },
+          { "id": "B", "text": "Subnetting", "is_correct": true },
+          { "id": "C", "text": "Aggregation", "is_correct": false },
+          { "id": "D", "text": "Routing", "is_correct": false }
+        ]
+      },
+      {
+        "id": 39,
+        "text": "What does VLSM stand for?",
+        "type": "single_choice",
+        "tags": ["ipv4", "subnetting"],
+        "options": [
+          { "id": "A", "text": "Virtual Local Subnet Mask", "is_correct": false },
+          { "id": "B", "text": "Variable Length Subnet Mask", "is_correct": true },
+          { "id": "C", "text": "Very Large Subnet Mask", "is_correct": false },
+          { "id": "D", "text": "Vector Length Subnet Mode", "is_correct": false }
+        ]
+      },
+      {
+        "id": 40,
+        "text": "What was the primary reason for creating IPv6?",
+        "type": "single_choice",
+        "tags": ["ipv6", "history"],
+        "options": [
+          { "id": "A", "text": "To improve security", "is_correct": false },
+          { "id": "B", "text": "IPv4 address exhaustion", "is_correct": true },
+          { "id": "C", "text": "To increase internet speed", "is_correct": false },
+          { "id": "D", "text": "To simplify routing tables", "is_correct": false }
+        ]
+      },
+      {
+        "id": 41,
+        "text": "How many bits are in an IPv6 address?",
+        "type": "single_choice",
+        "tags": ["ipv6", "addressing"],
+        "options": [
+          { "id": "A", "text": "32 bits", "is_correct": false },
+          { "id": "B", "text": "64 bits", "is_correct": false },
+          { "id": "C", "text": "128 bits", "is_correct": true },
+          { "id": "D", "text": "256 bits", "is_correct": false }
+        ]
+      },
+      {
+        "id": 42,
+        "text": "What are the two rules for shortening IPv6 addresses?",
+        "type": "multiple_choice",
+        "tags": ["ipv6", "syntax"],
+        "options": [
+          { "id": "A", "text": "Omit leading zeros", "is_correct": true },
+          { "id": "B", "text": "Use double colon (::)", "is_correct": true },
+          { "id": "C", "text": "Omit trailing zeros", "is_correct": false },
+          { "id": "D", "text": "Remove all colons", "is_correct": false }
+        ]
+      },
+      {
+        "id": 43,
+        "text": "What address type from IPv4 does not exist in IPv6?",
+        "type": "single_choice",
+        "tags": ["ipv6", "concepts"],
+        "options": [
+          { "id": "A", "text": "Unicast", "is_correct": false },
+          { "id": "B", "text": "Multicast", "is_correct": false },
+          { "id": "C", "text": "Broadcast", "is_correct": true },
+          { "id": "D", "text": "Anycast", "is_correct": false }
+        ]
+      },
+      {
+        "id": 44,
+        "text": "What are the two required unicast addresses on an IPv6 interface?",
+        "type": "multiple_choice",
+        "tags": ["ipv6", "addressing"],
+        "options": [
+          { "id": "A", "text": "Global Unicast (GUA)", "is_correct": true },
+          { "id": "B", "text": "Link-Local (LLA)", "is_correct": true },
+          { "id": "C", "text": "Site-Local", "is_correct": false },
+          { "id": "D", "text": "Loopback", "is_correct": false }
+        ]
+      },
+      {
+        "id": 45,
+        "text": "What protocol is used for error messages in IP networks?",
+        "type": "single_choice",
+        "tags": ["protocols", "diagnostics"],
+        "options": [
+          { "id": "A", "text": "TCP", "is_correct": false },
+          { "id": "B", "text": "ICMP", "is_correct": true },
+          { "id": "C", "text": "UDP", "is_correct": false },
+          { "id": "D", "text": "HTTP", "is_correct": false }
+        ]
+      },
+      {
+        "id": 46,
+        "text": "What utility uses ICMP Echo Request/Reply?",
+        "type": "single_choice",
+        "tags": ["tools", "diagnostics"],
+        "options": [
+          { "id": "A", "text": "Telnet", "is_correct": false },
+          { "id": "B", "text": "Ping", "is_correct": true },
+          { "id": "C", "text": "Traceroute", "is_correct": false },
+          { "id": "D", "text": "Nslookup", "is_correct": false }
+        ]
+      },
+      {
+        "id": 47,
+        "text": "What protocol in IPv6 replaces ARP?",
+        "type": "single_choice",
+        "tags": ["ipv6", "protocols"],
+        "options": [
+          { "id": "A", "text": "RARP", "is_correct": false },
+          { "id": "B", "text": "NDP (Neighbor Discovery Protocol)", "is_correct": true },
+          { "id": "C", "text": "DHCPv6", "is_correct": false },
+          { "id": "D", "text": "ICMPv4", "is_correct": false }
+        ]
+      },
+      {
+        "id": 48,
+        "text": "What does SLAAC stand for?",
+        "type": "single_choice",
+        "tags": ["ipv6", "configuration"],
+        "options": [
+          { "id": "A", "text": "Stateful Local Address Auto Configuration", "is_correct": false },
+          { "id": "B", "text": "Stateless Address Autoconfiguration", "is_correct": true },
+          { "id": "C", "text": "Secure Link Access Control", "is_correct": false },
+          { "id": "D", "text": "Standard Local Area Assignment Code", "is_correct": false }
+        ]
+      },
+      {
+        "id": 49,
+        "text": "What is the main role of the Transport Layer?",
+        "type": "single_choice",
+        "tags": ["layer-4", "concepts"],
+        "options": [
+          { "id": "A", "text": "Physical addressing", "is_correct": false },
+          { "id": "B", "text": "Logical communication between applications", "is_correct": true },
+          { "id": "C", "text": "Path selection", "is_correct": false },
+          { "id": "D", "text": "Data encryption", "is_correct": false }
+        ]
+      },
+      {
+        "id": 50,
+        "text": "What are the two main Transport Layer protocols?",
+        "type": "multiple_choice",
+        "tags": ["layer-4", "protocols"],
+        "options": [
+          { "id": "A", "text": "TCP", "is_correct": true },
+          { "id": "B", "text": "UDP", "is_correct": true },
+          { "id": "C", "text": "IP", "is_correct": false },
+          { "id": "D", "text": "ICMP", "is_correct": false }
+        ]
+      },
+      {
+        "id": 51,
+        "text": "What is the process of breaking data into pieces at the Transport Layer called?",
+        "type": "single_choice",
+        "tags": ["layer-4", "terminology"],
+        "options": [
+          { "id": "A", "text": "Fragmentation", "is_correct": false },
+          { "id": "B", "text": "Segmentation", "is_correct": true },
+          { "id": "C", "text": "Encapsulation", "is_correct": false },
+          { "id": "D", "text": "Serialization", "is_correct": false }
+        ]
+      },
+      {
+        "id": 52,
+        "text": "Which protocol is reliable and connection-oriented?",
+        "type": "single_choice",
+        "tags": ["layer-4", "tcp"],
+        "options": [
+          { "id": "A", "text": "UDP", "is_correct": false },
+          { "id": "B", "text": "TCP", "is_correct": true },
+          { "id": "C", "text": "IP", "is_correct": false },
+          { "id": "D", "text": "Ethernet", "is_correct": false }
+        ]
+      },
+      {
+        "id": 53,
+        "text": "Which protocol is unreliable and connectionless?",
+        "type": "single_choice",
+        "tags": ["layer-4", "udp"],
+        "options": [
+          { "id": "A", "text": "TCP", "is_correct": false },
+          { "id": "B", "text": "UDP", "is_correct": true },
+          { "id": "C", "text": "SSH", "is_correct": false },
+          { "id": "D", "text": "FTP", "is_correct": false }
+        ]
+      },
+      {
+        "id": 54,
+        "text": "What mechanism does TCP use to establish a connection?",
+        "type": "single_choice",
+        "tags": ["layer-4", "tcp"],
+        "options": [
+          { "id": "A", "text": "Two-Way Handshake", "is_correct": false },
+          { "id": "B", "text": "Three-Way Handshake", "is_correct": true },
+          { "id": "C", "text": "Four-Way Termination", "is_correct": false },
+          { "id": "D", "text": "Sliding Window", "is_correct": false }
+        ]
+      },
+      {
+        "id": 55,
+        "text": "What identifies the specific application in TCP/UDP headers?",
+        "type": "single_choice",
+        "tags": ["layer-4", "addressing"],
+        "options": [
+          { "id": "A", "text": "IP addresses", "is_correct": false },
+          { "id": "B", "text": "MAC addresses", "is_correct": false },
+          { "id": "C", "text": "Port numbers", "is_correct": true },
+          { "id": "D", "text": "Session IDs", "is_correct": false }
+        ]
+      },
+      {
+        "id": 56,
+        "text": "What is a socket?",
+        "type": "single_choice",
+        "tags": ["layer-4", "terminology"],
+        "options": [
+          { "id": "A", "text": "A physical port on a switch", "is_correct": false },
+          { "id": "B", "text": "Combination of IP address and Port number", "is_correct": true },
+          { "id": "C", "text": "Combination of MAC and IP", "is_correct": false },
+          { "id": "D", "text": "A type of CPU slot", "is_correct": false }
+        ]
+      },
+      {
+        "id": 57,
+        "text": "Which layer provides the interface between applications and the network?",
+        "type": "single_choice",
+        "tags": ["layer-7", "concepts"],
+        "options": [
+          { "id": "A", "text": "Presentation Layer", "is_correct": false },
+          { "id": "B", "text": "Session Layer", "is_correct": false },
+          { "id": "C", "text": "Application Layer", "is_correct": true },
+          { "id": "D", "text": "Transport Layer", "is_correct": false }
+        ]
+      },
+      {
+        "id": 58,
+        "text": "What are the functions of the Presentation Layer?",
+        "type": "multiple_choice",
+        "tags": ["layer-6", "concepts"],
+        "options": [
+          { "id": "A", "text": "Formatting data", "is_correct": true },
+          { "id": "B", "text": "Compressing data", "is_correct": true },
+          { "id": "C", "text": "Encrypting data", "is_correct": true },
+          { "id": "D", "text": "Routing packets", "is_correct": false },
+          { "id": "E", "text": "Establishing sessions", "is_correct": false }
+        ]
+      },
+      {
+        "id": 59,
+        "text": "Which protocol is used for web browsing?",
+        "type": "single_choice",
+        "tags": ["layer-7", "protocols"],
+        "options": [
+          { "id": "A", "text": "FTP", "is_correct": false },
+          { "id": "B", "text": "HTTP / HTTPS", "is_correct": true },
+          { "id": "C", "text": "SMTP", "is_correct": false },
+          { "id": "D", "text": "DNS", "is_correct": false }
+        ]
+      },
+      {
+        "id": 60,
+        "text": "Which protocol is used to SEND email?",
+        "type": "single_choice",
+        "tags": ["layer-7", "email"],
+        "options": [
+          { "id": "A", "text": "POP3", "is_correct": false },
+          { "id": "B", "text": "IMAP", "is_correct": false },
+          { "id": "C", "text": "SMTP", "is_correct": true },
+          { "id": "D", "text": "SNMP", "is_correct": false }
+        ]
+      },
+      {
+        "id": 61,
+        "text": "Which protocols are used to RETRIEVE email?",
+        "type": "multiple_choice",
+        "tags": ["layer-7", "email"],
+        "options": [
+          { "id": "A", "text": "SMTP", "is_correct": false },
+          { "id": "B", "text": "POP3", "is_correct": true },
+          { "id": "C", "text": "IMAP", "is_correct": true },
+          { "id": "D", "text": "HTTP", "is_correct": false }
+        ]
+      },
+      {
+        "id": 62,
+        "text": "What service translates domain names to IP addresses?",
+        "type": "single_choice",
+        "tags": ["layer-7", "dns"],
+        "options": [
+          { "id": "A", "text": "DHCP", "is_correct": false },
+          { "id": "B", "text": "DNS", "is_correct": true },
+          { "id": "C", "text": "ARP", "is_correct": false },
+          { "id": "D", "text": "NAT", "is_correct": false }
+        ]
+      },
+      {
+        "id": 63,
+        "text": "What protocol automatically assigns IP addresses?",
+        "type": "single_choice",
+        "tags": ["layer-7", "dhcp"],
+        "options": [
+          { "id": "A", "text": "DNS", "is_correct": false },
+          { "id": "B", "text": "DHCP", "is_correct": true },
+          { "id": "C", "text": "FTP", "is_correct": false },
+          { "id": "D", "text": "RDP", "is_correct": false }
+        ]
+      },
+      {
+        "id": 64,
+        "text": "What protocol is used for file transfer?",
+        "type": "single_choice",
+        "tags": ["layer-7", "protocols"],
+        "options": [
+          { "id": "A", "text": "HTTP", "is_correct": false },
+          { "id": "B", "text": "FTP", "is_correct": true },
+          { "id": "C", "text": "SMTP", "is_correct": false },
+          { "id": "D", "text": "Telnet", "is_correct": false }
+        ]
+      },
+      {
+        "id": 65,
+        "text": "What is a network vulnerability?",
+        "type": "single_choice",
+        "tags": ["security", "concepts"],
+        "options": [
+          { "id": "A", "text": "A malicious software", "is_correct": false },
+          { "id": "B", "text": "A weakness in a network or device", "is_correct": true },
+          { "id": "C", "text": "A type of firewall", "is_correct": false },
+          { "id": "D", "text": "An encryption algorithm", "is_correct": false }
+        ]
+      },
+      {
+        "id": 66,
+        "text": "What is the general term for malicious software?",
+        "type": "single_choice",
+        "tags": ["security", "malware"],
+        "options": [
+          { "id": "A", "text": "Spyware", "is_correct": false },
+          { "id": "B", "text": "Adware", "is_correct": false },
+          { "id": "C", "text": "Malware", "is_correct": true },
+          { "id": "D", "text": "Firmware", "is_correct": false }
+        ]
+      },
+      {
+        "id": 67,
+        "text": "What is a Denial of Service (DoS) attack?",
+        "type": "single_choice",
+        "tags": ["security", "attacks"],
+        "options": [
+          { "id": "A", "text": "Stealing data", "is_correct": false },
+          { "id": "B", "text": "Making a service unavailable to users", "is_correct": true },
+          { "id": "C", "text": "Guessing passwords", "is_correct": false },
+          { "id": "D", "text": "Phishing emails", "is_correct": false }
+        ]
+      },
+      {
+        "id": 68,
+        "text": "What is the 'Defense-in-Depth' approach?",
+        "type": "single_choice",
+        "tags": ["security", "strategy"],
+        "options": [
+          { "id": "A", "text": "Using only one very strong firewall", "is_correct": false },
+          { "id": "B", "text": "Using multiple layers of security", "is_correct": true },
+          { "id": "C", "text": "Relying on antivirus software", "is_correct": false },
+          { "id": "D", "text": "Hiring more security guards", "is_correct": false }
+        ]
+      },
+      {
+        "id": 69,
+        "text": "What does AAA stand for in network security?",
+        "type": "single_choice",
+        "tags": ["security", "aaa"],
+        "options": [
+          { "id": "A", "text": "Access, Administration, Audit", "is_correct": false },
+          { "id": "B", "text": "Authentication, Authorization, and Accounting", "is_correct": true },
+          { "id": "C", "text": "Availability, Accuracy, Authenticity", "is_correct": false },
+          { "id": "D", "text": "Allow, Alert, Action", "is_correct": false }
+        ]
+      },
+      {
+        "id": 70,
+        "text": "What is the primary function of a firewall?",
+        "type": "single_choice",
+        "tags": ["security", "devices"],
+        "options": [
+          { "id": "A", "text": "To route packets", "is_correct": false },
+          { "id": "B", "text": "To filter traffic between networks", "is_correct": true },
+          { "id": "C", "text": "To assign IP addresses", "is_correct": false },
+          { "id": "D", "text": "To detect malware on a hard drive", "is_correct": false }
+        ]
+      },
+      {
+        "id": 71,
+        "text": "What is a DMZ (Demilitarized Zone)?",
+        "type": "single_choice",
+        "tags": ["security", "network-design"],
+        "options": [
+          { "id": "A", "text": "A highly secure internal network", "is_correct": false },
+          { "id": "B", "text": "A network for servers accessible from the internet", "is_correct": true },
+          { "id": "C", "text": "A network with no security", "is_correct": false },
+          { "id": "D", "text": "A management VLAN", "is_correct": false }
+        ]
+      },
+      {
+        "id": 72,
+        "text": "Which protocol should replace Telnet for secure management?",
+        "type": "single_choice",
+        "tags": ["security", "protocols"],
+        "options": [
+          { "id": "A", "text": "HTTP", "is_correct": false },
+          { "id": "B", "text": "SSH", "is_correct": true },
+          { "id": "C", "text": "RDP", "is_correct": false },
+          { "id": "D", "text": "SNMP", "is_correct": false }
+        ]
+      }
+    ]
+  }
